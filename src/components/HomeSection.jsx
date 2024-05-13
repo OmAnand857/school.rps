@@ -4,7 +4,7 @@ function HomeSection(){
         return (    
             <>
                     <div class="my-8 relative" >
-                    <img class="absolute top-[15%] h-[8vw] w-[18vw] left-[18%] object-contain" src="./Group 14.png" alt=""></img>
+                    <img class="absolute top-[10%] h-[10vw] w-[18vw] left-[18%] object-contain" src="./Group 14.png" alt=""></img>
                             <div class="flex flex-col items-center">
                                 
                                 <h1 class="text-[#1B7242] my-[2vw] text-[5.5vw] leading-[150%] tracking-wide font-[Outfit] font-semibold">ABOUT US</h1>
