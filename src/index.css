@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.pagination-container{
-    margin-top:2vw;
+body{
+    margin-top:80px;
+    position:relative;
 }
+.about-us-buttons{
+    background-image:url("../public/button.png");
+    background-position:-37%;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+
+
+
+

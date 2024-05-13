@@ -1,25 +1,30 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function Navbar(){
 
 
     return (
 
-        <div class="w-full flex h-12 justify-around bg-teal-200">
-                    <div class="flex h-full  items-center">
-                        <div class="h-full  px-4">
-                            <img class="h-full rounded-3xl w-40" src="https://th.bing.com/th/id/OIP.4cmK9d36bF0F7-V-SaVPnAHaG_?rs=1&pid=ImgDetMain" alt=""></img>
-                        </div>
-                        <h1>mozoX</h1>
-                    </div>
-                    <div class="hidden lg:flex items-center ">
-                        <div class="h-full p-2" >Home</div>
-                        <div class="h-full p-2">About US</div>
-                        <div class="h-full p-2">Contact US</div>
-                        <div class="h-full p-2">Admissions</div>
-                    </div>
+            <div class="h-20 bg-[#1B7242] w-full flex justify-around items-center z-10 fixed top-0">
+                            <div class="h-full w-[28vw] lg:w-[16vw]">
+                            <Link to="/" style={{textDecoration:"none",color:"whiite"}}><img class="object-contain  h-full w-full" src="./RPS RAIPUR.png" alt=""/></Link>
+                            </div>
+                            <div class="hidden h-full lg:flex text-white items-center gap-6">
+                            <div  class="cursor-pointer"><Link to="/" style={{textDecoration:"none",color:"whiite"}}>Home</Link></div>
+                            <div  class="cursor-pointer"><Link to="/about" style={{textDecoration:"none",color:"whiite"}}>About Us</Link></div>
+                            <div  class="cursor-pointer">School Life</div>
+                            <div class="cursor-pointer" >Admissions</div>
+                            <div  class="cursor-pointer">News & Updates</div>
+                            <div  class="cursor-pointer">Gallery</div>
 
-        </div>
+                            </div>
+
+
+
+            </div>
+
+
+
 
     );
 
