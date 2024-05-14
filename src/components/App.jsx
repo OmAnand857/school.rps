@@ -5,7 +5,7 @@ import HomeSection from "./HomeSection";
 import Footer from "./Footer";
 import Testimonial from "./Testimonial";
 import About from "./About";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 function App(){
     return (
         <>
@@ -15,7 +15,7 @@ function App(){
             <HomeSection/>
             <Testimonial/>
             <Footer/></>}></Route>
-            <Route path="/about" element={<><Navbar/><About/></>}></Route>
+            <Route path="/about" element={<><Navbar/><About/><Footer/></>}></Route>
             </Routes>
           
         </>

@@ -12,7 +12,12 @@ body{
     background-size:contain;
     background-repeat:no-repeat;
 }
-
+.about-us-buttons-invert{
+    background-image:url("../public/button.png");
+    background-position:150%;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
 
 
 
