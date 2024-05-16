@@ -7,10 +7,10 @@ function About(){
         return(
 
                 <div>
-                <div class="h-[60vh] w-[100%] bg-teal-100  relative">
+                <div class="h-[60vh] w-full bg-teal-100  relative">
                 <img src="./About.png" alt="" class="w-full h-full"></img>
                 <div class="absolute top-[50%] left-[15%] lg:left-[25%] translate-y-[-50%] w-[80vw]  lg:w-[60vw]">
-                    <h1 class="text-white text-[10vw] md:text-[8vw] lg:text-[4vw] fony-[Outfit]"><span class="text-[#FE9132]">About</span>{" "}Us</h1>
+                    <h1 class="text-white text-[10vw] md:text-[8vw] lg:text-[4vw] font-[Outfit]"><span class="text-[#FE9132]">About</span>{" "}Us</h1>
                     <p class=" text-white text-[5vw] md:text-[4vw] lg:text-[2vw] font-[Roboto]">Empowering Futures, Shaping Minds: Welcome to RPS School. Discover our commitment to excellence, innovation, and holistic education.</p>
                 </div>
 

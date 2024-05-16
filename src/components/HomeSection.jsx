@@ -7,7 +7,7 @@ function HomeSection(){
                     <img class="absolute top-[8%] h-[10vw] w-[18vw] left-[20%] object-contain" src="./Group 14.png" alt=""></img>
                             <div class="flex flex-col items-center">
                                 
-                                <h1 class="text-[#1B7242] my-[2vw] text-[5.5vw] leading-[150%] tracking-wide font-[Outfit] font-semibold">About Us</h1>
+                                <h1 class="text-[#1B7242] my-[2vw] text-[5.5vw] leading-[150%] tracking-wide font-[Outfit] font-semibold">ABOUT US</h1>
                                 <div class="flex items-center w-4/5">
                                     <div class="w-2/4 h-full flex flex-col justify-center items-center">
                                         <p class="text-[2vw] font-[Roboto]">School has been providing outstanding education and support to students across the globe. Amanora School is affiliated to the Central Board of Secondary Education (1130452), India. It follows MyPedia curriculum in Kindergarten and switches to CBSE for Grades 1 to 12, representing multiple ethnicities – making us a truly international community. We offer a blend of academic, cultural, technological and globally connected activities within a dynamic environment.</p>
@@ -23,7 +23,7 @@ function HomeSection(){
                 
                     <div class="flex flex-col items-center my-8 relative">
                     <img  class="object-contain absolute top-[4.5vw] left-[67vw] h-[10vw] w-[10vw] "src="./Group 9.png" alt=""></img>
-                            <h1  class="text-[#1B7242] my-[2vw] text-[5.5vw] leading-[150%] tracking-wide font-[Outfit] font-semibold">Directors Message</h1>
+                            <h1  class="text-[#1B7242] my-[2vw] text-[5.5vw] leading-[150%] tracking-wide font-[Outfit] font-semibold">DIRECTORS MESSAGE</h1>
                             <div class="flex items-center w-4/5">
                                 <div class="w-2/4 " >
                                         <img class="h-full w-full"  src="https://th.bing.com/th/id/R.84638a6215f41d78a6aca7e6ee425702?rik=KN9%2bpuqbjuPJVg&riu=http%3a%2f%2fwww.mca.k12.pa.us%2fwp%2fmcaes%2fwp-content%2fuploads%2fsites%2f3%2f2016%2f10%2fDSC04312-1080x718.jpg&ehk=KIl2pBrCeWihOP2olYxOT83rNWgOIzVCpg%2bYRK3zgEY%3d&risl=&pid=ImgRaw&r=0" alt=""></img>

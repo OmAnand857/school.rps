@@ -18,7 +18,75 @@ body{
     background-size:contain;
     background-repeat:no-repeat;
 }
+.animation-triangle-float{
 
+    animation-name: triangleFloat;
+    animation-duration:15s;
+    animation-iteration-count: infinite;
+animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);   
+ animation-play-state: running;
+ animation-fill-mode:backwards;
+
+}
+@keyframes triangleFloat{
+
+    0%{
+        top:7vw;
+    }
+    25%{
+        top:5.5vw;
+        right:16vw;
+    }
+    50%{
+        right:14vw;
+        transform: rotate(45deg);
+    }
+    75%{
+        right:17vw;
+        top:6.5vw;
+    }
+    100%{
+        top:7vw;
+        
+    }
+
+}
+.animation-rectangle-float{
+
+    animation-name: rectangleFloat;
+    animation-duration:15s;
+    animation-iteration-count: infinite;
+animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);   
+ animation-play-state: running;
+ animation-fill-mode:backwards;
+
+}
+@keyframes rectangleFloat{
+
+    0%{
+        top:10vw;
+    }
+    25%{
+        top:8.5vw;
+        right:45vw;
+    }
+    50%{
+        right:43vw;
+        transform: rotate(90deg);
+    }
+    75%{
+        right:40vw;
+        top:7vw;
+    }
+    100%{
+        top:10vw;
+        
+    }
+
+}
+.list-decimal>li{
+    padding:5px;
+}
 
 
 

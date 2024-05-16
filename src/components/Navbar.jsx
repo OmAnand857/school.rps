@@ -12,9 +12,9 @@ function Navbar(){
                             <div class="hidden h-full lg:flex text-white items-center gap-6">
                             <div  class="cursor-pointer"><Link to="/" style={{textDecoration:"none",color:"whiite"}}>Home</Link></div>
                             <div  class="cursor-pointer"><Link to="/about" style={{textDecoration:"none",color:"whiite"}}>About Us</Link></div>
-                            <div  class="cursor-pointer">School Life</div>
-                            <div class="cursor-pointer" >Admissions</div>
-                            <div  class="cursor-pointer">News & Updates</div>
+                            <div  class="cursor-pointer"><Link to="/schoollife" style={{textDecoration:"none",color:"whiite"}}>School Life</Link></div>
+                            <div class="cursor-pointer" ><Link to="/admissions" style={{textDecoration:"none",color:"whiite"}}>Admissions</Link></div>
+                            <Link to="/news" style={{textDecoration:"none",color:"whiite"}}><div  class="cursor-pointer"> News & Updates</div></Link>
                             <div  class="cursor-pointer">Gallery</div>
 
                             </div>

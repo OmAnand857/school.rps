@@ -6,6 +6,10 @@ import Footer from "./Footer";
 import Testimonial from "./Testimonial";
 import About from "./About";
 import {  Routes, Route } from "react-router-dom";
+import Admissions from "./Admissions";
+import SchoolLife from "./SchoolLife";
+import NewsUpdates from "./NewsUpdates";
+
 function App(){
     return (
         <>
@@ -16,6 +20,9 @@ function App(){
             <Testimonial/>
             <Footer/></>}></Route>
             <Route path="/about" element={<><Navbar/><About/><Footer/></>}></Route>
+            <Route path="/admissions" element={<><Navbar/><Admissions/><Footer/></>}></Route>
+            <Route path="/schoollife" element={<><Navbar/><SchoolLife/><Footer/></>}></Route>
+            <Route path="/news" element={<><Navbar/><NewsUpdates/><Footer/></>}></Route>
             </Routes>
           
         </>
