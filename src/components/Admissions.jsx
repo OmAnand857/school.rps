@@ -26,13 +26,13 @@ function Admissions(){
 
 
 
-            <div class="flex w-[80vw] mx-auto gap-[2vw] p-[2vw] my-[2vw]">
+            <div class="flex-col flex lg:flex-row w-[80vw] items-center mx-auto gap-[2vw] p-[2vw] my-[2vw]">
 
                 <div>
-                    <img class="w-[30vw] h-full" src="./Group15094.png" alt=""/>
+                    <img class=" w-full lg:w-[30vw] h-full" src="./Group15094.png" alt=""/>
                 </div>
 
-                <div class="w-[50%] flex flex-col justify-around">
+                <div class=" w-full lg:w-[50%] flex flex-col justify-around">
                 <h1 class=" text-[3vw] fony-[Outfit] ">Admission Contact Form</h1>
                     
                     <div class="flex gap-[1vw]">
@@ -57,7 +57,7 @@ function Admissions(){
                     <input class="border-black border-2 rounded p-3"  id="class"></input>
                     
                     </div>
-                    <button class="w-full p-[1vw] bg-[#1B7242] text-xl text-white">Submit</button>
+                    <button class="w-full mt-[2vw] p-[1vw] bg-[#1B7242] text-xl text-white">Submit</button>
 
                 </div>
 

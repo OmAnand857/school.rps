@@ -94,7 +94,7 @@ function NewsUpdates(){
                                 </div>
 
 
-                            <div class="w-[90%] flex-col sm:items-center md:items-center lg:items-stretch lg:flex-row  flex flex-wrap justify-around mx-auto my-[4vw]">
+                            <div class="w-[90%] flex-col items-center md:items-center lg:items-stretch lg:flex-row  flex flex-wrap justify-around mx-auto my-[4vw]">
 
                                         <div class="flex flex-col w-[80%] lg:w-[48%] rounded shadow my-[2vw]">
                                                 <img class="h-3/4 w-full"  src="https://th.bing.com/th/id/OIP.G37tgeQqSNt7v2oPfj9ltQHaE7?rs=1&pid=ImgDetMain" alt=""></img>

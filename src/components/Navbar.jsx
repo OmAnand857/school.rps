@@ -15,8 +15,7 @@ function Navbar(){
                             <div  class="cursor-pointer"><Link to="/schoollife" style={{textDecoration:"none",color:"whiite"}}>School Life</Link></div>
                             <div class="cursor-pointer" ><Link to="/admissions" style={{textDecoration:"none",color:"whiite"}}>Admissions</Link></div>
                             <Link to="/news" style={{textDecoration:"none",color:"whiite"}}><div  class="cursor-pointer"> News & Updates</div></Link>
-                            <div  class="cursor-pointer">Gallery</div>
-
+                            <Link to="/gallery" style={{textDecoration:"none",color:"whiite"}}><div  class="cursor-pointer">Gallery</div></Link>
                             </div>
 
 
