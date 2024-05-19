@@ -17,13 +17,13 @@ function Gallery(){
 
 
 
-                            <div class="mx-auto h-[80px] w-[50vw] my-[5vw] flex">
+                            <div class="mx-auto h-[50px] lg:h-[80px] md:h-[80px] w-[60vw] lg:w-[50vw] my-[5vw] flex">
                                     <button class="w-1/2 h-full bg-[#1B7242] items-center flex justify-center">
-                                            <h1  class="text-white text-[2.5vw]  font-[Outfit]  uppercase">photo gallery</h1>
+                                            <h1  class="text-white text-[3.5vw] lg:text-[2.5vw]  font-[Outfit]  uppercase">photo gallery</h1>
                                     </button>
 
                                  <button class="w-1/2 h-full bg-[#F2F2F2] flex justify-center items-center">
-                                 <h1  class="text-black text-[2.5vw]  font-[Outfit]   uppercase">Video Gallery</h1>
+                                 <h1  class="text-black text-[3.5vw] lg:text-[2.5vw] font-[Outfit]   uppercase">Video Gallery</h1>
                                     </button>
 
                             </div>

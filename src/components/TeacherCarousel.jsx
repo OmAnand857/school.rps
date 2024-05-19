@@ -16,11 +16,11 @@ function TeacherCarousel(){
                                         autoplay="true"
                                         speed="1000"
                                        loop="true" 
-                                       navigation="true"
+                                       navigation="false"
                                         slides-per-view="3"
                                         space-between="45px"
                                         effect="coverflow"
-                                        centered-slides="true"
+                                        centered-slides="false"
                                         coverflow-effect-rotate="0"
                                         coverflow-effect-stretch="0"
                                         coverflow-effect-depth="100"
@@ -28,21 +28,21 @@ function TeacherCarousel(){
                                 >
 
                                                 <swiper-slide   >
-                                                <img class="h-[300px] lg:h-[30vw]"  src="./Group15094.png" alt=""></img>
-                                                </swiper-slide>
-
-                                                <swiper-slide >
-                                                <img class="h-[300px ]  lg:h-[30vw]"  src="./Group15094.png" alt=""></img>
+                                                <img class="h-[300px]  lg:h-[30vw]" src="./Group15094.png" alt=""></img>
                                                 </swiper-slide>
 
                                                 <swiper-slide >
                                                 <img class="h-[300px]  lg:h-[30vw]"  src="./Group15094.png" alt=""></img>
                                                 </swiper-slide>
+
                                                 <swiper-slide >
                                                 <img class="h-[300px]  lg:h-[30vw]"  src="./Group15094.png" alt=""></img>
                                                 </swiper-slide>
                                                 <swiper-slide >
                                                 <img class="h-[300px]  lg:h-[30vw]"  src="./Group15094.png" alt=""></img>
+                                                </swiper-slide>
+                                                <swiper-slide >
+                                                <img class="h-[300px]  lg:h-[30vw]" src="./Group15094.png" alt=""></img>
                                                 </swiper-slide>
                                                 <swiper-slide >
                                                 <img class="h-[300px]  lg:h-[30vw]"  src="./Group15094.png" alt=""></img>
