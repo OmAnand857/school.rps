@@ -81,12 +81,12 @@ function Navbar(){
 
                             <div class="flex flex-col gap-[1vw] items-center justify-around w-[90%] text-white h-[80vh] font-[Outfit]">
 
-                            <Link to="/" style={{textDecoration:"none",color:"whiite"}}><button  onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 rounded border-white">Home</button></Link>
-                            <Link to="/about" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 rounded border-white">About Us</button></Link>
-                            <Link to="/schoollife" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 rounded border-white">School Life</button></Link>
-                            <Link to="/admissions" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 rounded border-white">Admissions</button></Link>
-                            <Link to="/news" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 rounded border-white">News & Updates</button></Link>
-                            <Link to="/gallery" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 rounded border-white">Gallery</button></Link>
+                            <Link to="/" style={{textDecoration:"none",color:"whiite"}}><button  onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 text-[5vw] rounded border-white">Home</button></Link>
+                            <Link to="/about" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 text-[5vw] rounded border-white">About Us</button></Link>
+                            <Link to="/schoollife" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 text-[5vw] rounded border-white">School Life</button></Link>
+                            <Link to="/admissions" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 text-[5vw] rounded border-white">Admissions</button></Link>
+                            <Link to="/news" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 rounded text-[5vw] border-white">News</button></Link>
+                            <Link to="/gallery" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 text-[5vw] rounded border-white">Gallery</button></Link>
 
 
                             </div>

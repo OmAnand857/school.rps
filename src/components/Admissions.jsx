@@ -72,7 +72,7 @@ function Admissions(){
 
                 <div >
                         <h3  class=" text-[8vw] md:text-[6vw] lg:text-[2vw] font-[Outfit]">Admission Process</h3>
-                        <ol class="list-decimal">
+                        <ol class="list-decimal pl-6">
                             <li>Two passport size photographs of parents (Mother/Father).</li>
                             <li>Birth Certificate (Photocopy).</li>
                             <li>Transfer Certificate Original (Gr. I onwards).</li>

@@ -80,7 +80,7 @@ function NewsUpdates(){
 
                                 <div class="w-full h-[60px] flex">
                                         <div class="w-[25%] rounded-s-md bg-[#C1CDE3] relative">
-                                            <div class=" absolute top-[100%] left-[50%] w-0 h-0 border-l-[30px] border-l-transparent  border-r-[30px] border-r-transparent border-t-[30px] border-[#C1CDE3]"></div>
+                                            <div class=" absolute top-[100%] left-[50%] w-0 h-0 border-l-[4vw] border-l-transparent  border-r-[4vw] border-r-transparent border-t-[4vw] border-[#C1CDE3]"></div>
                                         </div>
                                         <div class="w-[25%] bg-[#D7D5B4] relative">
                                         <div class=" hidden absolute top-[100%] left-[50%] w-0 h-0 border-l-[30px] border-l-transparent  border-r-[30px] border-r-transparent border-t-[30px] border-[#D7D5B4]"></div>                             
