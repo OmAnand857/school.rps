@@ -33,7 +33,7 @@ function Navbar(){
 
     return (
 
-            <div class="h-20 bg-[#1B7242] w-full flex justify-around items-center z-10 fixed top-0">
+            <div class="h-20 bg-[#1B7242] w-full flex justify-around items-center z-10 fixed top-[40px]">
                             <div class="h-full w-[28vw] lg:w-[16vw] z-[101]">
                             <Link to="/" style={{textDecoration:"none",color:"whiite"}} ><img class="object-contain  h-full w-full" src="./RPS RAIPUR.png" alt=""/></Link>
                             </div>

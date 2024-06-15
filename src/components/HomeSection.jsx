@@ -109,8 +109,8 @@ function HomeSection(){
                             <div class="flex flex-col items-center">
                                 
                                 <h1 class="text-[#1B7242] my-[2vw] text-[5.5vw] leading-[150%] tracking-wide font-[Outfit] font-semibold">ABOUT US</h1>
-                                <div class="lg:flex-row flex flex-col items-center w-4/5 lg:gap-0 gap-[4vw]">
-                                    <div class="lg:w-2/4 order-1 w-full h-full flex flex-col justify-center items-center">
+                                <div class="lg:flex-row flex flex-col items-center w-4/5 lg:gap-4 gap-[4vw]">
+                                    <div class="lg:w-2/4 order- lg:order-0 w-full h-full flex flex-col justify-center items-center">
                                         <p class="lg:text-[2vw] text-[4vw] font-[Roboto]">School has been providing outstanding education and support to students across the globe. Amanora School is affiliated to the Central Board of Secondary Education (1130452), India. It follows MyPedia curriculum in Kindergarten and switches to CBSE for Grades 1 to 12, representing multiple ethnicities – making us a truly international community. We offer a blend of academic, cultural, technological and globally connected activities within a dynamic environment.</p>
                                         <button class=" rounded my-[1vw] lg:rounded-md w-[18vw] lg:w-[10vw] text-center h-[8vw] lg:h-[3.125vw] bg-[#1B7242] text-[3vw] lg:text-[1.5vw] text-white">View More</button>
                                     </div>

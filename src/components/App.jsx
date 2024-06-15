@@ -10,13 +10,20 @@ import Admissions from "./Admissions";
 import SchoolLife from "./SchoolLife";
 import NewsUpdates from "./NewsUpdates";
 import Gallery from "./Gallery";
+import Acheivements from "./Acheivements";
+import HallOfFame from "./HallOfFame";
+import SubNavBar from "./SubNavBar";
 function App(){
     return (
         <>
             <Routes>
-                <Route path="/" element={<>  <Navbar/>
+                <Route path="/" element={<> 
+                    <SubNavBar/>
+                 <Navbar/>
             
             <HomeSection/>
+            <Acheivements/>
+            <HallOfFame/>
             <Testimonial/>
             <Footer/></>}></Route>
             <Route path="/about" element={<><Navbar/><About/><Footer/></>}></Route>
