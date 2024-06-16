@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Slider from "./Slider";
 import HomeSection from "./HomeSection";
 import Footer from "./Footer";
+import Footer1 from "./Footer1";
 import Testimonial from "./Testimonial";
 import About from "./About";
 import {  Routes, Route } from "react-router-dom";
@@ -31,12 +32,12 @@ function App(){
             <HallOfFame/>
             <Testimonial/>
             <Contact/>
-            <Footer/></>}></Route>
-            <Route path="/about" element={<><Navbar/><About/><Footer/></>}></Route>
-            <Route path="/admissions" element={<><Navbar/><Admissions/><Footer/></>}></Route>
-            <Route path="/schoollife" element={<><Navbar/><SchoolLife/><Footer/></>}></Route>
-            <Route path="/news" element={<><Navbar/><NewsUpdates/><Footer/></>}></Route>
-            <Route path="/gallery" element ={<><Navbar/><Gallery/><Footer/></>}></Route>
+            <Footer1/></>}></Route>
+            <Route path="/about" element={<><Navbar/><About/><Footer1/></>}></Route>
+            <Route path="/admissions" element={<><Navbar/><Admissions/><Footer1/></>}></Route>
+            <Route path="/schoollife" element={<><Navbar/><SchoolLife/><Footer1/></>}></Route>
+            <Route path="/news" element={<><Navbar/><NewsUpdates/><Footer1/></>}></Route>
+            <Route path="/gallery" element ={<><Navbar/><Gallery/><Footer1/></>}></Route>
             </Routes>
           
         </>

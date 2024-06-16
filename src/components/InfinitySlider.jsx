@@ -2,6 +2,7 @@
 
 function InfinitySlider(){
 
+    const year = new Date().getFullYear();
 
     return(
 
@@ -14,7 +15,7 @@ function InfinitySlider(){
                                         Apply Now
                                     </div>
                                     <div className="bg-[#308B2E] rounded shadow-inner p-1 ">
-                                        <span>Admission open for academic year 2024-2025</span>
+                                        <span>Admission open for academic year {year}-{year+1}</span>
                                     </div>
                                     <div className="bg-[#308B2E] rounded shadow-inner p-1 ">
                                         <span>Please contact +9128232328|+29121291902 for admission related queries</span>

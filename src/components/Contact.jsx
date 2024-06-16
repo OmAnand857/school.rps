@@ -9,7 +9,7 @@ function Contact(){
 
         return(
 
-            <div class='w-[100vw] mx-auto flex flex-col lg:flex-row text-center mb-[4vw]'>
+            <div class='w-[100vw] mx-auto flex flex-col lg:flex-row text-center '>
 
             <div class="lg:w-1/2 w-full h-[300px] lg:h-auto">
 
