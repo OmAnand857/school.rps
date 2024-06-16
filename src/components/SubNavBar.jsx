@@ -9,10 +9,10 @@ function SubNavBar(){
 
 return (
 
-    <div className="w-[100%] bg-[#308B2E] h-[40px] z-10 flex justify-around items-center  fixed top-0">
+    <div className="w-[100%] bg-[#308B2E] lg:text-xs xl:text-base h-[40px] z-10 hidden  lg:flex justify-around items-center  fixed top-0">
 
-            <div className="flex items-center justify-around">
-                <PhoneIcon className="text-white"/>
+            <div className="flex items-center justify-around ">
+                <PhoneIcon className="text-white "/>
                 <span className="text-white">+91848383883/913838383282</span>
             </div>
 

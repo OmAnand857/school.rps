@@ -110,3 +110,9 @@ animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 .infinitySlider:hover{
     animation-play-state:paused;
 }
+
+@media (max-width:1024px){
+        body{
+            margin-top:120px;
+        }
+}

@@ -5,7 +5,7 @@ function InfinitySlider(){
 
     return(
 
-        <div className="w-[100%] h-[40px] bg-[#48AD46] z-10 fixed top-[40px]">
+        <div className="w-[100%] h-[40px] bg-[#48AD46] z-10 fixed top-0 lg:top-[40px]">
 
                     <div className="w-[90%] lg:w-[80%] h-full bg-[#48AD46] relative mx-auto overflow-hidden">
 

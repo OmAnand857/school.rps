@@ -1,12 +1,13 @@
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Link } from 'react-router-dom';
 
-
-function BannerComp(){
-
+function BannerComp(props){
+let back = "url" + "(" + props.image + ")";
         return(
 
                 
-            <div class="relative">
-            <img class="w-full h-[75vh]" src="./homeBanner.png" alt=""></img>
+            <div class="relative bg-no-repeat bg-center bg-cover" style={{backgroundImage:back}}>
+            <img class="w-full h-[60vh] md:h-[75vh]" src={props.image} alt=""></img>
 
 
         <div  class=" w-[80vw] lg:w-[40vw] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] lg:top-[40%] lg:left-[39%] ">
@@ -16,42 +17,7 @@ function BannerComp(){
             
         </div>
 
-        <div class=" hidden lg:flex h-[40vh] w-[65vw]  absolute bottom-[-20%] left-[50%] translate-x-[-50%]  justify-around">
-
-                    <div class="flex flex-col items-center justify-around w-[30%] h-full shadow-xl">
-                        <img class="w-full h-[70%]" src="./Rectangle 5.png" alt=""></img>
-                      <Link to="admissions"> <div class="flex flex-col items-center cursor-pointer">
-                            <h3 className="text-xl">Admissions</h3>
-                            <ArrowForwardIcon className="text-[#FE9132] text-[1rem]"/>
-
-                        </div></Link> 
-
-                    </div>
-
-                    <div class="flex flex-col items-center justify-around w-[30%] h-full shadow-xl">
-                        <img class="w-full h-[70%]" src="./image 4.png" alt=""></img>
-                    <Link to="about">    <div class="flex flex-col items-center cursor-pointer">
-                            <h3 className="text-xl">About Us</h3>
-                            <ArrowForwardIcon className="text-[#FE9132] text-[1rem]"/>
-
-                        </div></Link>
-
-                    </div>
-
-
-                    <div class="flex flex-col items-center justify-around w-[30%] h-full shadow-xl">
-                        <img class="w-full h-[70%]" src="./image 3.png" alt=""></img>
-                      <Link to="/SchoolLife">  <div class="flex flex-col items-center cursor-pointer">
-                            <h3 className="text-xl">Facilities</h3>
-                            <ArrowForwardIcon className="text-[#FE9132] text-[1rem]"/>
-
-                        </div></Link>
-
-                    </div>
-
-
-        </div>
-
+      
 
 
 
