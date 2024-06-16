@@ -13,18 +13,24 @@ import Gallery from "./Gallery";
 import Acheivements from "./Acheivements";
 import HallOfFame from "./HallOfFame";
 import SubNavBar from "./SubNavBar";
+import InfinitySlider from "./InfinitySlider";
+import Contact from "./Contact";
+
+
 function App(){
     return (
         <>
             <Routes>
                 <Route path="/" element={<> 
                     <SubNavBar/>
-                 <Navbar/>
+                    <InfinitySlider/>
+                    <Navbar/>
             
             <HomeSection/>
             <Acheivements/>
             <HallOfFame/>
             <Testimonial/>
+            <Contact/>
             <Footer/></>}></Route>
             <Route path="/about" element={<><Navbar/><About/><Footer/></>}></Route>
             <Route path="/admissions" element={<><Navbar/><Admissions/><Footer/></>}></Route>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-    margin-top:120px;
+    margin-top:160px;
     position:relative;
 }
 .about-us-buttons{
@@ -89,5 +89,24 @@ animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
     padding:5px;
 }
 
+.infinitySlider{
+            cursor:pointer;
+            animation-name:infinitySlide;
+            animation-duration: 25s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+         animation-play-state: running;
 
 
+}
+@keyframes infinitySlide {
+    0%{
+       left:100%;
+    }
+    100%{
+        left:-100%;
+    }
+}
+.infinitySlider:hover{
+    animation-play-state:paused;
+}

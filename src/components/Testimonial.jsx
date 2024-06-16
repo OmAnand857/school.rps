@@ -12,9 +12,9 @@ function Testimonial(){
             <img class=" absolute bottom-[10vw] right-[1vw] z-[-1] opacity-30 h-[5vw] w-[5vw]" src="./Ornament 65.png" alt=""></img>
             <img class=" absolute bottom-[5vw] right-[1vw] z-[-1] opacity-30 h-[10vw] w-[10vw]" src="./Ornament 63.png" alt=""></img>
 
-            <h1 class="text-center text-[4vw] text-[#001E6C]">This is What Our <span class="text-[#FE9132]">Students</span> Say</h1>
+            <h1 class="text-center text-[5.5vw] text-[#001E6C]">This is What Our <span class="text-[#FE9132]">Students</span> Say</h1>
         <swiper-container 
-        speed="1000"
+        speed="500"
         slides-per-view="1"
         autoplay="true"
         effect="slide"
