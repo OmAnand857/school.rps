@@ -25,10 +25,10 @@ function Testimonial(){
         centerd-slides="true"
         >
         <swiper-slide > <div class="flex  justify-center p-6 ">
-            <div class="w-[90%] md:[w-80%] flex md:flex-row flex-col  items-center my-[3vw]  bg-white rounded p-[10px]">
+            <div class="w-[90%] md:w-[80%] flex md:flex-row flex-col  items-center my-[3vw]  bg-white rounded p-[10px]">
                 <div class="md:w-[30%] w-[100%] flex justify-center items-center"><img class="object-contain h-[15vw] w-[15vw] rounded-[50%]" src="https://th.bing.com/th/id/OIP.NqY3rNMnx2NXYo3KJfg43gAAAA?rs=1&pid=ImgDetMain" alt=""></img></div>
                 <div class="md:w-[70%] w-[100%] flex flex-col text-left">
-                    <h3 class=" text-xl md:text-3xl text-center md:text-left font-[Outfit]">Draupadi Murmu</h3>
+                    <h3 class=" text-xl md:text-3xl text-center my-2 md:text-left font-[Outfit]">Draupadi Murmu</h3>
                     <p class="text-base lg:text-[1.5vw] font-[Roboto]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse </p>
 
                 </div>
@@ -36,20 +36,20 @@ function Testimonial(){
             </div>
       </div></swiper-slide>
         <swiper-slide><div class="flex  justify-center p-6 ">
-            <div class="w-[90%] md:[w-80%] flex md:flex-row flex-col  items-center my-[3vw]  bg-white rounded p-[10px]">
+            <div class="w-[90%] md:w-[80%] flex md:flex-row flex-col  items-center my-[3vw]  bg-white rounded p-[10px]">
                 <div class="md:w-[30%] w-[100%] flex justify-center items-center"><img class="object-contain h-[15vw] w-[15vw] rounded-[50%]" src="https://th.bing.com/th/id/OIP.NqY3rNMnx2NXYo3KJfg43gAAAA?rs=1&pid=ImgDetMain" alt=""></img></div>
                 <div class="md:w-[70%] w-[100%] flex flex-col text-left">
-                    <h3 class=" text-xl md:text-3xl text-center md:text-left font-[Outfit]">Draupadi Murmu</h3>
+                    <h3 class=" text-xl md:text-3xl text-center my-2 md:text-left font-[Outfit]">Draupadi Murmu</h3>
                     <p class="text-base lg:text-[1.5vw] font-[Roboto]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse </p>
 
                 </div>
                 
             </div></div></swiper-slide>
             <swiper-slide><div class="flex  justify-center p-6 ">
-            <div class="w-[90%] md:[w-80%] flex md:flex-row flex-col  items-center my-[3vw]  bg-white rounded p-[10px]">
+            <div class="w-[90%] md:w-[80%] flex md:flex-row flex-col  items-center my-[3vw]  bg-white rounded p-[10px]">
                 <div class="md:w-[30%] w-[100%] flex justify-center items-center"><img class="object-contain h-[15vw] w-[15vw] rounded-[50%]" src="https://th.bing.com/th/id/OIP.NqY3rNMnx2NXYo3KJfg43gAAAA?rs=1&pid=ImgDetMain" alt=""></img></div>
                 <div class="md:w-[70%] w-[100%] flex flex-col text-left">
-                    <h3 class=" text-xl md:text-3xl text-center md:text-left font-[Outfit]">Draupadi Murmu</h3>
+                    <h3 class=" text-xl md:text-3xl text-center my-2 md:text-left font-[Outfit]">Draupadi Murmu</h3>
                     <p class="text-base lg:text-[1.5vw] font-[Roboto]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse </p>
 
                 </div>

@@ -1,15 +1,16 @@
-import React , { useState , useEffect } from "react";
+import React , { useState , useEffect  } from "react";
 import { Link } from "react-router-dom";
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import CloseIcon from '@mui/icons-material/Close';
 
-function Navbar(){
+function Navbar(props){
+    console.log(props);
 
                 const [toggler , setToggler] = useState(false);
-
                 function toggleNavbar(){
 
                             setToggler(!toggler);
+                           
 
 
                 }
@@ -26,6 +27,12 @@ function Navbar(){
                 },[toggler])
 
 
+               function handleClick(){
+                        window.scrollTo(0,0);
+                        const position = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
+                        props.scroll(position);
+               }
+
 
 
 
@@ -33,7 +40,7 @@ function Navbar(){
 
     return (
 
-            <div class="h-20 bg-[#1B7242]  shadow w-full flex justify-around items-center z-10 fixed top-[40px] lg:top-[80px]">
+            <div class=" navbar h-20 bg-[#1B7242]  shadow w-full flex justify-around items-center z-10 fixed top-[40px] lg:top-[80px]">
                             <div class="h-full w-[28vw] lg:w-[16vw] z-[101]">
                             <Link to="/" style={{textDecoration:"none",color:"whiite"}} ><img class="object-contain  h-full w-full" src="./RPS RAIPUR.png" alt=""/></Link>
                             </div>
@@ -52,12 +59,12 @@ function Navbar(){
 
 
                             <div class="hidden h-full lg:flex text-white items-center gap-6">
-                            <div  class="cursor-pointer"><Link to="/" style={{textDecoration:"none",color:"whiite"}}>Home</Link></div>
-                            <div  class="cursor-pointer"><Link to="/about" style={{textDecoration:"none",color:"whiite"}}>About Us</Link></div>
-                            <div  class="cursor-pointer"><Link to="/schoollife" style={{textDecoration:"none",color:"whiite"}}>School Life</Link></div>
-                            <div class="cursor-pointer" ><Link to="/admissions" style={{textDecoration:"none",color:"whiite"}}>Admissions</Link></div>
-                            <Link to="/news" style={{textDecoration:"none",color:"whiite"}}><div  class="cursor-pointer"> News & Updates</div></Link>
-                            <Link to="/gallery" style={{textDecoration:"none",color:"whiite"}}><div  class="cursor-pointer">Gallery</div></Link>
+                            <div  class="cursor-pointer" onClick={handleClick}><Link to="/" style={{textDecoration:"none",color:"whiite"}}>Home</Link></div>
+                            <div  class="cursor-pointer" onClick={handleClick} ><Link to="/about" style={{textDecoration:"none",color:"whiite"}}>About Us</Link></div>
+                            <div  class="cursor-pointer" onClick={handleClick}><Link to="/schoollife" style={{textDecoration:"none",color:"whiite"}}>School Life</Link></div>
+                            <div class="cursor-pointer" onClick={handleClick} ><Link to="/admissions" style={{textDecoration:"none",color:"whiite"}}>Admissions</Link></div>
+                            <Link to="/news" style={{textDecoration:"none",color:"whiite"}}><div  class="cursor-pointer" onClick={handleClick}> News & Updates</div></Link>
+                            <Link to="/gallery" style={{textDecoration:"none",color:"whiite"}}><div  class="cursor-pointer" onClick={handleClick}>Gallery</div></Link>
                             </div>
 
 
@@ -81,12 +88,12 @@ function Navbar(){
 
                             <div class="flex flex-col gap-[1vw] items-center justify-around w-[90%] text-white h-[80vh] font-[Outfit]">
 
-                            <Link to="/" style={{textDecoration:"none",color:"whiite"}}><button  onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 text-[5vw] rounded border-white">Home</button></Link>
-                            <Link to="/about" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 text-[5vw] rounded border-white">About Us</button></Link>
-                            <Link to="/schoollife" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 text-[5vw] rounded border-white">School Life</button></Link>
-                            <Link to="/admissions" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 text-[5vw] rounded border-white">Admissions</button></Link>
-                            <Link to="/news" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 rounded text-[5vw] border-white">News</button></Link>
-                            <Link to="/gallery" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 text-[5vw] rounded border-white">Gallery</button></Link>
+                            <Link onClick={handleClick} to="/" style={{textDecoration:"none",color:"whiite"}}><button  onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 text-[5vw] rounded border-white">Home</button></Link>
+                            <Link onClick={handleClick} to="/about" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar}  class="h-[10vw] w-[35vw] border-2 px-1 text-[5vw] rounded border-white">About Us</button></Link>
+                            <Link onClick={handleClick} to="/schoollife" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 text-[5vw] rounded border-white">School Life</button></Link>
+                            <Link  onClick={handleClick} to="/admissions" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 text-[5vw] rounded border-white">Admissions</button></Link>
+                            <Link onClick={handleClick} to="/news" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 rounded text-[5vw] border-white">News</button></Link>
+                            <Link  onClick={handleClick} to="/gallery" style={{textDecoration:"none",color:"whiite"}}><button onClick={toggleNavbar} class="h-[10vw] w-[35vw] border-2 px-1 text-[5vw] rounded border-white">Gallery</button></Link>
 
 
                             </div>
