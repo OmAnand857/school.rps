@@ -16,6 +16,8 @@ import HallOfFame from "./HallOfFame";
 import SubNavBar from "./SubNavBar";
 import InfinitySlider from "./InfinitySlider";
 import Contact from "./Contact";
+import {CountUp} from "countup.js";
+import "intersection-observer";
 
 
 function App(){
@@ -87,7 +89,57 @@ function App(){
 
 
 
+//counter logic
+useEffect(()=>{
+  var countOptions = {
+  useEasing: true,
+  duration:4,
+  separator: '',
+  enableScrollSpy:true,
+  scrollSpyOnce:true,
+  smartEasingThreshold:500,
+  smartEasingAmount:50,
+  suffix:"+"
+}
+var countUp = new CountUp('teachers',100,countOptions)
+var countUp = new CountUp('students',5000,countOptions)
+var countUp = new CountUp('awards',50,countOptions)
+if (!countUp.error) {
+  countUp.start();
+} else {
+  console.error(countUp.error);
+}
+},[])
 
+//scroll animation logic
+
+var io = new IntersectionObserver((entries)=>{
+  entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+          console.log(entry,"entry");
+
+
+          if(entry.target.classList[0]==="scroll-animate"){
+             entry.target.classList.add("FadeIn");
+          }
+          if(entry.target.classList[0]==="scroll-animate-rev"){
+            entry.target.classList.add("FadeInRev");
+          } 
+          if(entry.target.classList[0]==="scroll-plane"){
+            entry.target.classList.add("scrollPlane");
+          } 
+        }
+       
+  })
+});
+io.POLL_INTERVAL = 50; // Time in milliseconds.
+const animatables = document.querySelectorAll(".scroll-animate");
+console.log(animatables,"animatables array");
+const animatables1 = document.querySelectorAll(".scroll-animate-rev");
+const animatables2 = document.querySelectorAll(".scroll-plane");
+animatables2.forEach((el)=>io.observe(el));
+animatables1.forEach((el)=>io.observe(el));
+animatables.forEach((el)=>io.observe(el));
 
 
 

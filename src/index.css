@@ -5,6 +5,7 @@
 body{
     margin-top:160px;
     position:relative;
+    overflow-x: hidden;
 }
 .about-us-buttons{
     background-image:url("../public/button.png");
@@ -124,4 +125,80 @@ animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
 .hiddenScroll{
     display: none;
+}
+
+.FadeIn{
+    animation-name: fadein;
+    animation-play-state: running;
+    animation-duration:1s;
+    animation-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        animation-delay:300ms;
+}
+
+@keyframes fadein {
+    0%{
+        transform: translateX(-100%);
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+.FadeInRev{
+    animation-name: fadeinrev;
+    animation-play-state: running;
+    animation-duration:1s;
+    animation-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-delay:300ms;
+}
+@keyframes fadeinrev {
+    0%{
+        transform: translateX(100%);
+        opacity:0;
+        border:none;
+    }
+    100%{
+        opacity:1;
+    }
+}
+.scrollPlane{
+    animation-name: scrollplane;
+    animation-play-state: running;
+    animation-duration:5s;
+    animation-timing-function:cubic-bezier(1,1,0,0);
+    animation-delay:2000ms;
+}
+@keyframes scrollplane {
+            0%{
+                top:-1.75vw;
+                 left:7.75vw;
+            }
+            25%{
+                top:-8vw;
+                left:50vw;
+                transform: rotate(45deg);
+
+            }
+            50%{
+                top:-4vw;
+                left:85vw;
+                transform:rotate(60deg);
+            }
+            60%{
+                top:50vw;
+                 left:200vw;
+                 transform:rotate(60deg);
+            }
+            75%{
+                top:50vw;
+                left:-100vw;
+                transform:rotate(240deg);
+            }
+            
+            100%{
+                top:-1.75vw;
+                 left:7.75vw;
+                 transform:rotate(360deg);
+
+            }
 }
