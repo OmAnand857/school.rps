@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+html.lenis, html.lenis body {
+    height: auto;
+  }
+  
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  
+  .lenis.lenis-smooth iframe {
+    pointer-events: none;
+  }
+
+
 body{
     margin-top:160px;
     position:relative;
@@ -132,7 +153,6 @@ animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
     animation-play-state: running;
     animation-duration:1s;
     animation-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);
-        animation-delay:300ms;
 }
 
 @keyframes fadein {
@@ -149,7 +169,6 @@ animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
     animation-play-state: running;
     animation-duration:1s;
     animation-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    animation-delay:300ms;
 }
 @keyframes fadeinrev {
     0%{
@@ -186,19 +205,21 @@ animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
             }
             60%{
                 top:50vw;
-                 left:200vw;
-                 transform:rotate(60deg);
+                left:200vw;
+                display:none;
+                transform:rotate(60deg);
             }
             75%{
                 top:50vw;
                 left:-100vw;
+                display:none;
                 transform:rotate(240deg);
             }
             
             100%{
                 top:-1.75vw;
-                 left:7.75vw;
-                 transform:rotate(360deg);
+                left:7.75vw;
+                transform:rotate(360deg);
 
             }
 }

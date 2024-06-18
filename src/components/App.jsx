@@ -18,6 +18,7 @@ import InfinitySlider from "./InfinitySlider";
 import Contact from "./Contact";
 import {CountUp} from "countup.js";
 import "intersection-observer";
+import Lenis from "lenis";
 
 
 function App(){
@@ -47,38 +48,38 @@ function App(){
       };
 
       useEffect(()=>{
-            if(scrollPosition>100){
-                console.log(document.querySelector(".subnav"));
-                document.querySelector(".subnav").classList.remove("lg:flex");
-                document.querySelector(".subnav").classList.add("lg:hidden");
-                document.querySelector(".infinity").classList.add("hidden");
+        if(scrollPosition>100){
+            console.log(document.querySelector(".subnav"));
+            document.querySelector(".subnav").classList.remove("lg:flex");
+            document.querySelector(".subnav").classList.add("lg:hidden");
+            document.querySelector(".infinity").classList.add("hidden");
 
-                        document.querySelector("body").classList?.remove("mt-[160px]");
-                        document.querySelector("body").classList.add("mt-[80px]");
-                        
-                        document.querySelector(".navbar").classList.remove("lg:top-[80px]");
-                        document.querySelector(".navbar").classList.remove("top-[40px]")
-                        document.querySelector(".navbar").classList.add("top-0");
-            }
-        else{
-            document.querySelector(".subnav").classList.remove("lg:hidden");
-            document.querySelector(".subnav").classList.add("lg:flex");
-            document.querySelector(".infinity").classList.remove("hidden");
-            
-            document.querySelector("body").classList.remove("mt-[80px]");
-            document.querySelector("body").classList.add("lg:mt-[160px]");
-            document.querySelector("body").classList.add("mt-[120px]");
-
-            document.querySelector(".navbar").classList.remove("lg:top-0"); 
-            document.querySelector(".navbar").classList.add("lg:top-[80px]");
-            document.querySelector(".navbar").classList.add("top-[40px]");
-                       
-
-
+                    document.querySelector("body").classList?.remove("mt-[160px]");
+                    document.querySelector("body").classList.add("mt-[80px]");
+                    
+                    document.querySelector(".navbar").classList.remove("lg:top-[80px]");
+                    document.querySelector(".navbar").classList.remove("top-[40px]")
+                    document.querySelector(".navbar").classList.add("top-0");
         }
+    else{
+        document.querySelector(".subnav").classList.remove("lg:hidden");
+        document.querySelector(".subnav").classList.add("lg:flex");
+        document.querySelector(".infinity").classList.remove("hidden");
+        
+        document.querySelector("body").classList.remove("mt-[80px]");
+        document.querySelector("body").classList.add("lg:mt-[160px]");
+        document.querySelector("body").classList.add("mt-[120px]");
+
+        document.querySelector(".navbar").classList.remove("lg:top-0"); 
+        document.querySelector(".navbar").classList.add("lg:top-[80px]");
+        document.querySelector(".navbar").classList.add("top-[40px]");
+                   
 
 
-      },[scrollPosition])
+    }
+
+
+  },[scrollPosition])
 
 
 
@@ -142,6 +143,20 @@ animatables1.forEach((el)=>io.observe(el));
 animatables.forEach((el)=>io.observe(el));
 
 
+//lenis 
+
+useEffect(()=>{const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)},[])
 
 
 
