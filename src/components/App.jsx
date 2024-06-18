@@ -127,11 +127,17 @@ var io = new IntersectionObserver((entries)=>{
           if(entry.target.classList[0]==="scroll-animate"){
              entry.target.classList.add("FadeIn");
           }
-          if(entry.target.classList[0]==="scroll-animate-rev"){
+         else if(entry.target.classList[0]==="scroll-animate-rev"){
             entry.target.classList.add("FadeInRev");
           } 
-          if(entry.target.classList[0]==="scroll-plane"){
+         else if(entry.target.classList[0]==="scroll-plane"){
             entry.target.classList.add("scrollPlane");
+          } 
+        else  if(entry.target.classList[0]==="scroll-zoomin"){
+            entry.target.classList.add("scrollZoomin");
+          } 
+          else  if(entry.target.classList[0]==="scroll-opacity"){
+            entry.target.classList.add("scrollOpacity");
           } 
         }
        
@@ -141,8 +147,15 @@ io.POLL_INTERVAL = 100; // Time in milliseconds.
 const animatables = document.querySelectorAll(".scroll-animate");
 animatables.forEach((el)=>io.observe(el));
 const animatables1 = document.querySelectorAll(".scroll-animate-rev");
-const animatables2 = document.querySelectorAll(".scroll-plane");console.log(animatables1,"animatables1 array");
+const animatables2 = document.querySelectorAll(".scroll-plane");
+const animatables3 = document.querySelectorAll(".scroll-zoomin");
+const animatables4 = document.querySelectorAll(".scroll-opacity");
+
+
+console.log(animatables1,"animatables1 array");
 console.log(animatables2,"animatables2 array");
+animatables4.forEach((el)=>io.observe(el));
+animatables3.forEach((el)=>io.observe(el));
 animatables2.forEach((el)=>io.observe(el));
 animatables1.forEach((el)=>io.observe(el));
 },[]);
@@ -156,9 +169,6 @@ animatables1.forEach((el)=>io.observe(el));
 //lenis 
 
 useEffect(()=>{const lenis = new Lenis()
-
-lenis.on('scroll', (e) => {
-})
 
 function raf(time) {
   lenis.raf(time)

@@ -225,3 +225,36 @@ animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
             }
 }
+
+.scrollZoomin{
+    animation-name:scrollZoomIn;
+    animation-play-state: running;
+    animation-duration:1s;
+    animation-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+@keyframes scrollZoomIn {
+    0%{
+        transform: scale3d(.3,.3,.3);
+        opacity:0;
+        
+    }
+    50%{
+        opacity:1;
+    }
+}
+
+.scrollOpacity{
+    animation-name:scrollopacity;
+    animation-play-state: running;
+    animation-duration:1s;
+    animation-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+@keyframes scrollopacity {
+    0%{
+        opacity:0;
+        
+    }
+    100%{
+        opacity:1;
+    }
+}

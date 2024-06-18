@@ -2,6 +2,7 @@ import CardComp from "./CardComp";
 import Slider from "./Slider";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Link } from "react-router-dom";
+import GallerySection from "./GallerySection";
 function HomeSection(){
         return (    
             <>              
@@ -98,7 +99,7 @@ function HomeSection(){
 
 
                     <div class="mt-[40px] lg:mt-[10vw] relative" >
-                    <img class="hidden lg:block absolute top-[8%] h-[10vw] w-[18vw] left-[20%] object-contain" src="./Group 14.png" alt=""></img>
+                    <img class=" scroll-opacity hidden lg:block absolute top-[8%] h-[10vw] w-[18vw] left-[20%] object-contain" src="./Group 14.png" alt=""></img>
                             <div class="flex flex-col items-center">
                                 
                                 <h1 class="text-[#1B7242] my-[2vw] text-6xl leading-[150%] tracking-wide font-[Outfit] font-semibold">ABOUT US</h1>
@@ -116,7 +117,7 @@ function HomeSection(){
 
                 
                     <div class="flex flex-col items-center my-16 w-[100vw] relative">
-                    <img   class=" hidden lg:block object-contain absolute top-[3.5vw] left-[65vw] h-[10vw] w-[10vw] "src="./Group 9.png" alt=""></img>
+                    <img   class="scroll-opacity hidden lg:block object-contain absolute top-[3.5vw] left-[65vw] h-[10vw] w-[10vw] "src="./Group 9.png" alt=""></img>
                             <h1  class="text-[#1B7242] text-center lg:my-[2vw] my-[4vw] text-6xl leading-[150%] tracking-wide font-[Outfit] font-semibold">DIRECTORS MESSAGE</h1>
                             <div class="flex lg:flex-row flex-col  gap-[4vw] lg:gap-4 items-center w-4/5">
                                 <div class="  lg:w-2/4 w-full " >
@@ -129,23 +130,7 @@ function HomeSection(){
 
                     </div> 
 
-                    <div class="relative flex flex-col items-center my-8">
-                    <img   class="scroll-plane hidden md:block object-contain absolute top-[-1.75vw] left-[7.75vw] h-[10vw] w-[10vw] "src="./scribble final version-145.png" alt=""></img>
-
-                        <div class="flex flex-col items-center w-[90%] text-center">
-                            <h1  class="text-[#1B7242] mt-[2vw] text-[4.5vw] leading-[150%] tracking-wide font-[Outfit] font-semibold">Exploring Boundless Creativity</h1>
-                            <p class="text-2xl font-[Roboto]">" Each snapshot captures the essence of creativity, collaboration, and joy, showcasing the boundless potential of our young learners."</p>
-                            <div class="flex flex-wrap justify-around mt-[1vw]">
-                            <CardComp/>
-                            <CardComp/>
-                            <CardComp/>
-                            <CardComp/>
-                            <CardComp/>
-                            <CardComp/>
-
-                            </div>
-                        </div>
-                    </div>
+                    <GallerySection/>
                     
                    
                   

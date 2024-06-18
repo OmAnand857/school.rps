@@ -6,7 +6,7 @@ function Acheivements(){
 
 
     return (
-            <div className="w-[90%] p-4 my-16 mx-auto bg-[#308B2E] rounded flex flex-col  items-center lg:flex-row justify-around ">
+            <div className="w-[80%] p-4 my-16 mx-auto bg-[#308B2E] rounded flex flex-col  items-center lg:flex-row justify-around ">
 
                     <div className="flex flex-col text-center w-[30%] m-4 items-center gap-[10px]">
                         <span id="teachers" className="text-[#FE9132] text-4xl">5000+</span>
