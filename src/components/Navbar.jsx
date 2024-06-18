@@ -40,7 +40,7 @@ function Navbar(props){
 
     return (
 
-            <div class=" navbar h-20 bg-[#1B7242]  shadow w-full flex justify-around items-center z-10 fixed top-[40px] lg:top-[80px]">
+            <div class=" navbar h-20 bg-[#1B7242]  shadow w-[100vw] flex justify-around items-center z-10 fixed top-[40px] lg:top-[80px]">
                             <div class="h-full w-[28vw] lg:w-[16vw] z-[101]">
                             <Link to="/" style={{textDecoration:"none",color:"whiite"}} ><img class="object-contain  h-full w-full" src="./RPS RAIPUR.png" alt=""/></Link>
                             </div>
@@ -84,7 +84,7 @@ function Navbar(props){
 
 
 
-                    <div className='lg:hidden navbar-collapse w-full h-[100vh] transition-all  translate-x-[100%] z-[100]  top-0 left-0 bg-[#1B7242] fixed flex flex-col items-center justify-center'>
+                    <div className='lg:hidden navbar-collapse w-[100vw] h-[100vh] transition-all  translate-x-[100%] z-[100]  top-0 left-0 bg-[#1B7242] fixed flex flex-col items-center justify-center'>
 
                             <div class="flex flex-col gap-[1vw] items-center justify-around w-[90%] text-white h-[80vh] font-[Outfit]">
 

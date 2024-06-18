@@ -115,7 +115,7 @@ function HomeSection(){
 
 
                 
-                    <div class="flex flex-col items-center my-16 relative">
+                    <div class="flex flex-col items-center my-16 w-[100vw] relative">
                     <img   class=" hidden lg:block object-contain absolute top-[3.5vw] left-[65vw] h-[10vw] w-[10vw] "src="./Group 9.png" alt=""></img>
                             <h1  class="text-[#1B7242] text-center lg:my-[2vw] my-[4vw] text-6xl leading-[150%] tracking-wide font-[Outfit] font-semibold">DIRECTORS MESSAGE</h1>
                             <div class="flex lg:flex-row flex-col  gap-[4vw] lg:gap-4 items-center w-4/5">

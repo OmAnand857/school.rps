@@ -114,6 +114,10 @@ if (!countUp.error) {
 
 //scroll animation logic
 
+
+useEffect(()=>{
+
+
 var io = new IntersectionObserver((entries)=>{
   entries.forEach((entry)=>{
         if(entry.isIntersecting){
@@ -133,14 +137,20 @@ var io = new IntersectionObserver((entries)=>{
        
   })
 });
-io.POLL_INTERVAL = 50; // Time in milliseconds.
+io.POLL_INTERVAL = 100; // Time in milliseconds.
 const animatables = document.querySelectorAll(".scroll-animate");
-console.log(animatables,"animatables array");
+animatables.forEach((el)=>io.observe(el));
 const animatables1 = document.querySelectorAll(".scroll-animate-rev");
-const animatables2 = document.querySelectorAll(".scroll-plane");
+const animatables2 = document.querySelectorAll(".scroll-plane");console.log(animatables1,"animatables1 array");
+console.log(animatables2,"animatables2 array");
 animatables2.forEach((el)=>io.observe(el));
 animatables1.forEach((el)=>io.observe(el));
-animatables.forEach((el)=>io.observe(el));
+},[]);
+
+
+
+
+
 
 
 //lenis 
@@ -148,7 +158,6 @@ animatables.forEach((el)=>io.observe(el));
 useEffect(()=>{const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
-  console.log(e)
 })
 
 function raf(time) {
