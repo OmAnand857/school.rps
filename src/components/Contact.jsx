@@ -9,7 +9,7 @@ function Contact(){
 
         return(
 
-            <div class='w-[100vw] mx-auto flex flex-col lg:flex-row text-center '>
+            <div class='w-[100vw] mx-auto flex flex-col font-[Open Sans] lg:flex-row text-center '>
 
             <div class="lg:w-1/2 w-full h-[300px] lg:h-auto ">
 
@@ -18,7 +18,7 @@ function Contact(){
             </div>
 
             <div class="lg:w-1/2 w-full lg:h-auto  bg-[#ACD8C8] text-white text-left relative p-8">
-                    <h1 class="lg:text-[3vw] text-[5vw] tracking-wide  text-white  font-[Outfit] mb-4">Contact for Information</h1>
+                    <h1 class="lg:text-[3vw] text-[5vw] tracking-wide  text-white  font-[Open Sans] mb-4">Contact for Information</h1>
                     <div class='flex flex-col  gap-8'>
                        <div class="flex"><PhoneInTalkIcon className="mr-[2vw]"/><div>+91-95890-85558 +91-93296-21221</div></div>
                         

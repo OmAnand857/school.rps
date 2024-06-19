@@ -157,12 +157,12 @@ animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
 @keyframes fadein {
     0%{
-        transform: translateX(-100%);
+        transform: translateX(-100vw);
         opacity:0;
     }
     100%{
         opacity:1;
-        transform: translateX(0%);
+        
     }
 }
 .FadeInRev{
@@ -178,8 +178,8 @@ animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
         
     }
     100%{
-        transform: translateX(0%);
         opacity:1;
+       
     }
 }
 .scrollPlane{
