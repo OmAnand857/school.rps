@@ -163,16 +163,15 @@ useGSAP(()=>{
 
 
 
-
         return (    
             <>              
 
-                        <div className="relative">
+                        <div className="relative" >
 
                                 <Slider/>
                                                                 <div className=" hidden lg:flex h-[40vh] w-[65vw]  absolute bottom-[-20%] left-[50%] translate-x-[-50%] z-[5]  justify-around">
 
-                                <div className="flex flex-col items-center justify-around w-[30%] h-full shadow-xl">
+                                <div className=" bannercard flex flex-col items-center gap-4 w-[30%] h-full shadow-xl">
                                     <img className="w-full h-[70%]" src="./Rectangle 5.png" alt=""></img>
                                 <Link to="admissions"> <div className="flex flex-col items-center cursor-pointer">
                                         <h3 className="text-xl">Admissions</h3>
@@ -182,7 +181,7 @@ useGSAP(()=>{
 
                                 </div>
 
-                                <div className="flex flex-col items-center justify-around w-[30%] h-full shadow-xl">
+                                <div className="bannercard flex flex-col items-center gap-4 w-[30%] h-full shadow-xl">
                                     <img className="w-full h-[70%]" src="./image 4.png" alt=""></img>
                                 <Link to="about">    <div className="flex flex-col items-center cursor-pointer">
                                         <h3 className="text-xl">About Us</h3>
@@ -194,7 +193,7 @@ useGSAP(()=>{
                                                     </div>
 
 
-                            <div className="flex flex-col items-center justify-around w-[30%] h-full shadow-xl">
+                            <div className=" bannercard flex flex-col items-center gap-4 w-[30%] h-full shadow-xl">
                                 <img className="w-full h-[70%]" src="./image 3.png" alt=""></img>
                             <Link to="/SchoolLife">  <div className="flex flex-col items-center cursor-pointer">
                                     <h3 className="text-xl">Facilities</h3>
@@ -264,11 +263,11 @@ useGSAP(()=>{
                                 
                                 <h1 className="textanimate text-[#1B7242] my-[2vw] text-6xl leading-[150%] tracking-wide font-[Outfit] font-semibold">ABOUT US</h1>
                                 <div className="  lg:flex-row flex flex-col items-center w-4/5 lg:gap-4 gap-[4vw]">
-                                    <div className=" scrollanimate   lg:w-2/4 p-2 md:p-4 rounded    hover:translate-y-[-10px]  shadow-[rgba(0,0,0,0.24)_0px_3px_8px] hover:shadow-[0_0_0_2px_rgba(27,114,66,1),0_10px_60px_0_rgba(0,0,0,.1)] order- lg:order-0 w-full h-full flex flex-col justify-center items-center">
+                                    <div className=" order-1 lg:order-0 scrollanimate   lg:w-2/4 p-2 md:p-4 rounded    hover:translate-y-[-10px]  shadow-[rgba(0,0,0,0.24)_0px_3px_8px] hover:shadow-[0_0_0_2px_rgba(27,114,66,1),0_10px_60px_0_rgba(0,0,0,.1)]  w-full h-full flex flex-col justify-center items-center">
                                         <p className="text-xl font-[Open Sans]">School has been providing outstanding education and support to students across the globe. Amanora School is affiliated to the Central Board of Secondary Education (1130452), India. It follows MyPedia curriculum in Kindergarten and switches to CBSE for Grades 1 to 12, representing multiple ethnicities – making us a truly international community. We offer a blend of academic, cultural, technological and globally connected activities within a dynamic environment.</p>
                                         <button className=" rounded my-[20px]  text-center   bg-[#1B7242] text-[xl] h-[50px] w-[120px] text-white">View More</button>
                                     </div>
-                                    <div className=" scrollanimaterev lg:w-2/4 w-full "><img src="https://static.vecteezy.com/system/resources/thumbnails/007/343/251/small_2x/school-building-in-flat-style-modern-school-college-building-illustration-vector.jpg" alt=""/></div>
+                                    <div className="lg:order-1  scrollanimaterev lg:w-2/4 w-full "><img src="https://www.amanoraschool.edu.in/public/uploads/2023/1691128498-64cc92b292d66.jpg" alt=""/></div>
                                 </div>
                             </div>
                     </div>

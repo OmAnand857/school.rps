@@ -55,9 +55,9 @@ return(
                     </div>
 
                     <div class="flex flex-col items-center pt-[4vw] w-[90vw] mx-auto text-center">
-                    <h2 class="lg:text-[4vw] text-[5vw] tracking-wide lg:tracking-widest text-[#1B7242] font-bold   my-[1vw] font-[Outfit]">FACILITIES</h2>
+                    <h2 class="lg:text-5xl text-3xl tracking-wide lg:tracking-widest text-[#1B7242] font-bold   my-[1vw] font-[Outfit]">FACILITIES</h2>
                     <img class="lg:w-[20vw] w-[35vw] md-[22.5vw] " src="./Frame.png" alt=""></img>
-                    <p class=" mt-[1vw] text-[5vw] md:text-[4vw] lg:text-[2vw] font-[Roboto]">Each child is different, and at Raipur Public School, Raipur we understand this and provide the young scholars with the ideal learning environment.</p>
+                    <p class=" mt-[1vw] text-base lg:text-3xl font-[Roboto]">Each child is different, and at Raipur Public School, Raipur we understand this and provide the young scholars with the ideal learning environment.</p>
                 </div>
 
 
@@ -88,17 +88,17 @@ return(
 
 
 
-                    <div class='w-[90vw] mx-auto text-center my-[4vw]'>
-                                <h2 class="lg:text-[4vw] text-[5vw] tracking-wide lg:tracking-widest font-bold uppercase text-[#1B7242]   my-[1vw] font-[Outfit]">Student Activities</h2>
+                    <div class='w-[90vw] mx-auto text-center my-12'>
+                                <h2 class="lg:text-5xl text-3xl tracking-wide lg:tracking-widest font-bold uppercase text-[#1B7242]   my-[1vw] font-[Outfit]">Student Activities</h2>
                             <div class="flex flex-col justify-around">
 
 
 
-                                    <div class="w-full flex gap-[2vw] my-[2vw] border rounded-[16px]">
-                                                <div class="w-[30%]" >
-                                                    <img class='h-full w-full' src="FrameSchool1.png" alt=""></img>
+                                    <div class="w-full flex flex-col lg:flex-row gap-[2vw] my-[2vw] border rounded-[16px]">
+                                                <div class="w-full lg:w-[30%]" >
+                                                    <img class='h-full w-full ' src="FrameSchool1.png" alt=""></img>
                                                 </div>
-                                                <div class="w-[70%]  flex flex-col justify-around text-left p-[2vw]">
+                                                <div class=" w-full lg:w-[70%]  flex flex-col justify-around gap-4 text-left p-[2vw]">
                                                         <div class="flex text-[#6E798C] ">
                                                             <small class="uppercase">sports</small>
                                                             <small class="mr-0 ml-auto ">3 days ago</small>
@@ -109,7 +109,7 @@ return(
                                                         </div>
 
                                                         <div class="flex text-[#007AE9] items-center ">
-                                                            <img class="h-[3vw] w-[3vw] rounded-full mr-[1vw]" src="https://th.bing.com/th/id/OIP.2Ecc2kJaDoiau98cs8wETgHaE8?rs=1&pid=ImgDetMain" alt=""></img>
+                                                            <img class="h-[40px] w-[40px] rounded-full mr-[1vw]" src="https://th.bing.com/th/id/OIP.2Ecc2kJaDoiau98cs8wETgHaE8?rs=1&pid=ImgDetMain" alt=""></img>
                                                             <span class="uppercase">PT Teacher</span>
                                                             <span class="mr-0 ml-auto ">Read More</span>
                                                         </div>
@@ -121,11 +121,11 @@ return(
 
 
                                     
-                                    <div class="w-full flex gap-[2vw] my-[2vw] border rounded-[16px]">
-                                                <div class="w-[30%]" >
+                                    <div class="w-full flex flex-col lg:flex-row gap-[2vw] my-[2vw] border rounded-[16px]">
+                                                <div class="lg:w-[30%] w-full" >
                                                     <img class="h-full w-full" src="FrameSchool2.png" alt=""></img>
                                                 </div>
-                                                <div class="w-[70%] flex flex-col justify-around text-left p-[2vw]">
+                                                <div class="lg:w-[70%] w-full  flex flex-col justify-around gap-4 text-left p-[2vw]">
                                                         <div class="flex text-[#6E798C] ">
                                                             <small class="uppercase">Science</small>
                                                             <small class="mr-0 ml-auto ">3 days ago</small>
@@ -136,7 +136,7 @@ return(
                                                         </div>
 
                                                         <div class="flex text-[#007AE9] items-center ">
-                                                            <img class="h-[3vw] w-[3vw] rounded-full mr-[1vw]" src="https://th.bing.com/th/id/OIP.2Ecc2kJaDoiau98cs8wETgHaE8?rs=1&pid=ImgDetMain" alt=""></img>
+                                                            <img class="h-[40px] w-[40px] rounded-full mr-[1vw]" src="https://th.bing.com/th/id/OIP.2Ecc2kJaDoiau98cs8wETgHaE8?rs=1&pid=ImgDetMain" alt=""></img>
                                                             <span class="uppercase">PT Teacher</span>
                                                             <span class="mr-0 ml-auto ">Read More</span>
                                                         </div>
@@ -150,11 +150,11 @@ return(
 
 
                                     
-                                    <div class="w-full flex gap-[2vw] my-[2vw] border rounded-[16px]">
-                                                <div class="w-[30%]" >
+                                    <div class="w-full flex flex-col lg:flex-row gap-[2vw] my-[2vw] border rounded-[16px]">
+                                                <div class="w-full lg:w-[30%]" >
                                                     <img class="h-full w-full" src="FrameSchool3.png" alt=""></img>
                                                 </div>
-                                                <div class="w-[70%] flex flex-col justify-around text-left p-[2vw]">
+                                                <div class="w-full lg:w-[70%] flex flex-col justify-around gap-4 text-left p-[2vw]">
                                                         <div class="flex text-[#6E798C] ">
                                                             <small class="uppercase">Culture</small>
                                                             <small class="mr-0 ml-auto ">3 days ago</small>
@@ -165,7 +165,7 @@ return(
                                                         </div>
 
                                                         <div class="flex text-[#007AE9] items-center ">
-                                                            <img class="h-[3vw] w-[3vw] rounded-full mr-[1vw]" src="https://th.bing.com/th/id/OIP.2Ecc2kJaDoiau98cs8wETgHaE8?rs=1&pid=ImgDetMain" alt=""></img>
+                                                            <img class="h-[40px] w-[40px] rounded-full mr-[1vw]" src="https://th.bing.com/th/id/OIP.2Ecc2kJaDoiau98cs8wETgHaE8?rs=1&pid=ImgDetMain" alt=""></img>
                                                             <span class="uppercase">PT Teacher</span>
                                                             <span class="mr-0 ml-auto ">Read More</span>
                                                         </div>

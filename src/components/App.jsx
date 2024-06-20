@@ -19,6 +19,7 @@ import Contact from "./Contact";
 import {CountUp} from "countup.js";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import Testimonial1 from "./Testimonial1";
 
 
 function App(){
@@ -145,7 +146,7 @@ if (!countUp.error) {
             <HomeSection/>
             <Acheivements/>
             <HallOfFame/>
-            <Testimonial/>
+            <Testimonial1/>
             <Contact/>
             <Footer1/></>}></Route>
             <Route path="/about" element={<><SubNavBar/><InfinitySlider/>  <Navbar scroll={setScrollPosition}/><About/><Footer1/></>}></Route>

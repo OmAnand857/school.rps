@@ -65,7 +65,7 @@ function Admissions(){
 
 
 
-            <div class="flex flex-col w-[90vw] mx-auto items-center">
+            <div class="flex flex-col w-[90vw] mx-auto my-12 items-center">
 
                 <h1 class=" text-[8vw] md:text-[8vw] lg:text-[4vw] font-[Outfit]"><span class="text-[#1B7242]">Top</span> School In Chattisgarh</h1>
                 <h3 class=" text-[8vw] md:text-[6vw] lg:text-[2vw] font-[Outfit] mb-[2vw]"><span class="text-[#FE9132]">Best</span> school in Raipur</h3>
