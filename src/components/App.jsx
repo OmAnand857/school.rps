@@ -1,4 +1,4 @@
-import {React , useState , useEffect ,} from "react";
+import {React , useState , useEffect ,useRef} from "react";
 import Navbar from "./Navbar";
 import Slider from "./Slider";
 import HomeSection from "./HomeSection";
@@ -17,7 +17,8 @@ import SubNavBar from "./SubNavBar";
 import InfinitySlider from "./InfinitySlider";
 import Contact from "./Contact";
 import {CountUp} from "countup.js";
-import "intersection-observer";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 
 function App(){
@@ -111,51 +112,10 @@ if (!countUp.error) {
 }
 },[])
 
-//scroll animation logic
+//scroll animation logic with gsap;
 
 
-useEffect(()=>{
 
-
-var io = new IntersectionObserver((entries)=>{
-  entries.forEach((entry)=>{
-        if(entry.isIntersecting){
-          console.log(entry,"entry");
-
-          if(entry.target.classList[0]==="scroll-animate"){
-             entry.target.classList.add("FadeIn");
-          }
-        else if(entry.target.classList[0]==="scroll-animate-rev"){
-           entry.target.classList.add("FadeInRev");
-         } 
-         else if(entry.target.classList[0]==="scroll-plane"){
-            entry.target.classList.add("scrollPlane");
-          } 
-        else  if(entry.target.classList[0]==="scroll-zoomin"){
-            entry.target.classList.add("scrollZoomin");
-          } 
-          else  if(entry.target.classList[0]==="scroll-opacity"){
-            entry.target.classList.add("scrollOpacity");
-          } 
-        }
-       
-  })
-});
-io.POLL_INTERVAL = 100; // Time in milliseconds.
-const animatables = document.querySelectorAll(".scroll-animate");
-const animatables1 = document.querySelectorAll(".scroll-animate-rev");
-const animatables2 = document.querySelectorAll(".scroll-plane");
-const animatables3 = document.querySelectorAll(".scroll-zoomin");
-const animatables4 = document.querySelectorAll(".scroll-opacity");
-
-animatables.forEach((el)=>io.observe(el));
-animatables1.forEach((el)=>io.observe(el));
-animatables2.forEach((el)=>io.observe(el));
-animatables3.forEach((el)=>io.observe(el));
-animatables4.forEach((el)=>io.observe(el));
-
-
-},[]);
 
 
 
