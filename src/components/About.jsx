@@ -27,9 +27,8 @@ function About(){
                 duration:1,
                 ease:"power1.out",
                 scrollTrigger:{
-                    markers:true,
                     trigger:".scrollanimate",
-                    start:"top 75%",
+                    start:"top 70%",
                     end:"top 50%",
                 }
                 
@@ -47,9 +46,8 @@ function About(){
                 duration:1,
                 ease:"power1.out",
                 scrollTrigger:{
-                    markers:true,
                     trigger:".scrollanimate1",
-                    start:"top 75%",
+                    start:"top 70%",
                     end:"top 50%",
                 }
                 
@@ -66,7 +64,6 @@ function About(){
                 opacity:1,
                 duration:0.75,
                 scrollTrigger:{
-                    markers:true,
                     trigger:".textanimate",
                     start:"top 80%",
                     end:"top 50%",
@@ -84,9 +81,8 @@ function About(){
                 duration:1,
                 ease:"power1.out",
                 scrollTrigger:{
-                    markers:true,
                     trigger:".scrollanimaterev",
-                    start:"top 75%",
+                    start:"top 70%",
                     end:"top 50%",
                 }
                 
