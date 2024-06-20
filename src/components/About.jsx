@@ -27,7 +27,6 @@ function About(){
                 duration:1,
                 ease:"power1.out",
                 scrollTrigger:{
-                    markers:true,
                     trigger:".scrollanimate",
                     start:"top 60%",
                     end:"top 50%",
@@ -47,7 +46,6 @@ function About(){
                 duration:1,
                 ease:"power1.out",
                 scrollTrigger:{
-                    markers:true,
                     trigger:".scrollanimate1",
                     start:"top 60%",
                     end:"top 50%",
@@ -84,7 +82,7 @@ function About(){
                 duration:1,
                 ease:"power1.out",
                 scrollTrigger:{
-                    markers:true,
+                    
                     trigger:".scrollanimaterev",
                     start:"top 60%",
                     end:"top 50%",
