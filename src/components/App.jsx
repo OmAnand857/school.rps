@@ -50,7 +50,7 @@ function App(){
 
       useEffect(()=>{
         if(scrollPosition>100){
-            console.log(document.querySelector(".subnav"));
+           
             document.querySelector(".subnav").classList.remove("lg:flex");
             document.querySelector(".subnav").classList.add("lg:hidden");
             document.querySelector(".infinity").classList.add("hidden");

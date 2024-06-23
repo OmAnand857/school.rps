@@ -4,7 +4,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import CloseIcon from '@mui/icons-material/Close';
 
 function Navbar(props){
-    console.log(props);
+    
 
                 const [toggler , setToggler] = useState(false);
                 function toggleNavbar(){
@@ -18,7 +18,7 @@ function Navbar(props){
                 useEffect(()=>{
                     
                             if(toggler===true){
-                                console.log(document.getElementsByClassName('navbar-collapse')[0].classList)
+                                
                                 document.getElementsByClassName('navbar-collapse')[0].classList.remove("translate-x-[100%]");
                             }
                             else{

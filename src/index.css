@@ -131,7 +131,7 @@ animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
     display: none;
 }
 
-.FadeIn{
+.fadeIn{
     animation-name: fadein;
     animation-play-state: running;
     animation-duration:1s;
@@ -142,13 +142,15 @@ animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
     0%{
         transform: translateX(-100vw);
         opacity:0;
+        visibility:hidden;
     }
     100%{
         opacity:1;
+        display:flex ;
         
     }
 }
-.FadeInRev{
+.fadeInRev{
     animation-name: fadeinrev;
     animation-play-state: running;
     animation-duration:1s;
@@ -158,6 +160,7 @@ animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
     0%{
         transform: translateX(100vw);
         opacity:0;
+        visibility: hidden;
         
     }
     100%{

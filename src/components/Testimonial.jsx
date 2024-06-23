@@ -7,7 +7,7 @@ function Testimonial(){
     return (
             < >
             <div class=" bg-[#D9F0E8] py-8 relative z-[-2]">
-            <img class="absolute top-[4vw] left-[1vw] z-[-1] h-[30vw] w-[30vw]" src="./scribble final version-107.png" alt=""></img>
+            <img class=" absolute top-[4vw] left-[1vw] z-[-1] h-[30vw] w-[30vw]" src="./scribble final version-107.png" alt=""></img>
             <img class="absolute top-[15vw] left-[90vw] h-[22vw] w-[10vw]" src="Group 10.png" alt=""></img>
             <img class=" absolute bottom-[10vw] right-[1vw] z-[-1] opacity-30 h-[5vw] w-[5vw]" src="./Ornament 65.png" alt=""></img>
             <img class=" absolute bottom-[5vw] right-[1vw] z-[-1] opacity-30 h-[10vw] w-[10vw]" src="./Ornament 63.png" alt=""></img>

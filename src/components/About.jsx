@@ -1,114 +1,19 @@
-import {React , useRef} from "react";
+import {React , useRef ,useEffect} from "react";
 import TeacherCarousel from "./TeacherCarousel";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
 
 function About(){
 
 
-
-        //gsap logic
-
-        gsap.registerPlugin(useGSAP,ScrollTrigger);
-        const animationContainer3 = useRef();
-
-
-        useGSAP(()=>{
-
-            gsap.fromTo(".scrollanimate",{
-                x:-400,
-                opacity:0,
-                
-            },
-            {
-                x:0,
-                opacity:1,
-                duration:1,
-                ease:"power1.out",
-                scrollTrigger:{
-                    trigger:".scrollanimate",
-                    start:"top 60%",
-                    end:"top 50%",
-                }
-                
         
-        
-            })
-            gsap.fromTo(".scrollanimate1",{
-                x:-400,
-                opacity:0,
-                
-            },
-            {
-                x:0,
-                opacity:1,
-                duration:1,
-                ease:"power1.out",
-                scrollTrigger:{
-                    trigger:".scrollanimate1",
-                    start:"top 60%",
-                    end:"top 50%",
-                    
-                }
-                
-        
-        
-            })
-
-            gsap.fromTo(".textanimate",{
-                y:20,
-                opacity:0,
-            },
-            {
-                y:0,
-                opacity:1,
-                duration:0.75,
-                scrollTrigger:{
-                    trigger:".textanimate",
-                    start:"top 80%",
-                    end:"top 50%",
-                }
-            })
-
-            gsap.fromTo(".scrollanimaterev",{
-                x:400,
-                opacity:0,
-                
-            },
-            {
-                x:0,
-                opacity:1,
-                duration:1,
-                ease:"power1.out",
-                scrollTrigger:{
-                    
-                    trigger:".scrollanimaterev",
-                    start:"top 60%",
-                    end:"top 50%",
-                }
-                
-        
-        
-            })
-
-
-
-        },{scope:animationContainer3});
-
-
-
-
-
-
-
-
-
+    
+    
 
 
         return(
 
-                <div ref={animationContainer3}>
+                <div >
                 <div class="h-[60vh] w-full bg-teal-100  relative">
                 <img src="./About.png" alt="" class="w-full h-full"></img>
                 <div class="absolute top-[50%] left-[15%] lg:left-[25%] translate-y-[-50%] w-[80vw]  lg:w-[60vw]">
@@ -120,15 +25,15 @@ function About(){
 
 
                 <div class="flex flex-col items-center pt-[4vw]">
-                    <h2 class=" textanimate lg:text-6xl text-center text-5xl tracking-wide lg:tracking-widest   my-[1vw] font-[Outfit]">Preparing Students to Achieve Success</h2>
+                    <h2 class="  lg:text-6xl text-center text-5xl tracking-wide lg:tracking-widest   my-[1vw] font-[Open Sans]">Preparing Students to Achieve Success</h2>
                     <img class="lg:w-[20vw] w-[35vw] md-[22.5vw] " src="./Frame.png" alt=""></img>
                 </div>
 
-
+                <div >
                 
-                    <div class="scrollanimate  flex flex-col  lg:flex-row items-center gap-4 justify-center my-8 w-[90vw] mx-auto">
+                    <div class="flex  flex-col  lg:flex-row items-center gap-4 justify-center my-8 w-[90vw] mx-auto">
 
-                    <div class="  w-full lg:w-1/2 flex flex-col order-1 lg:order-0">
+                    <div class="scrollanimate2   w-full lg:w-1/2 flex flex-col order-1 lg:order-0">
                     <h2 class="text-3xl lg:text-left text-center ">Developing Confident and<br/>
                         Successful Learners</h2>
                     <div class="h-[3px] lg:w-[80%] w-full bg-[#1B7242]"></div>
@@ -143,7 +48,7 @@ function About(){
                     </div>
 
 
-                <div class="scrollanimaterev flex flex-col lg:flex-row gap-4 items-center  mt-[2vw] w-[90vw] mx-auto">
+                <div class="scrollanimaterev1 flex flex-col lg:flex-row gap-4 items-center  mt-[2vw] w-[90vw] mx-auto">
 
                     <div class="lg:w-1/2 w-full order-1 flex flex-col  lg:text-right  ">
                         <h2 class="text-3xl text-center lg:text-right ">Developing Confident and<br />
@@ -153,15 +58,15 @@ function About(){
                         <button class=" bg-[#1B7242] h-[40px] w-[120px] text-white mx-auto  rounded">View More</button>
                     </div>
 
-                    <div class="w-[100%] lg:w-1/2 flex justify-center lg:justify-start">
+                    <div class=" scrollanimaterev1 w-[100%] lg:w-1/2 flex justify-center lg:justify-start">
                         <img class="object-contain" src="./blob2.png" alt=""></img>
                     </div>
 
                 </div>
 
-                                <div class="scrollanimate1 flex flex-col  lg:flex-row items-center gap-4 justify-center my-8 w-[90vw] mx-auto">
+                                <div class="flex flex-col  lg:flex-row items-center gap-4 justify-center my-8 w-[90vw] mx-auto">
 
-                <div class="w-full lg:w-1/2 flex flex-col order-1 lg:order-0">
+                <div  class="scrollanimate1  w-full lg:w-1/2 flex flex-col order-1 lg:order-0">
                 <h2 class="text-3xl lg:text-left text-center ">Developing Confident and<br/>
                     Successful Learners</h2>
                 <div class="h-[3px] lg:w-[80%] w-full bg-[#1B7242]"></div>
@@ -171,6 +76,8 @@ function About(){
 
                 <div class="w-full justify-center lg:order-1  lg:w-1/2 flex lg:justify-end">
                     <img  class="object-contain" src="./blob.png" alt=""></img>
+                </div>
+
                 </div>
 
                 </div>
