@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef ,useState } from "react";
 import CardComp from "./CardComp";
 import Slider from "./Slider";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
@@ -7,9 +7,13 @@ import GallerySection from "./GallerySection";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Navbar from "./Navbar";
+
+
 
 function HomeSection(){
 
+    const [scrollPosition, setScrollPosition] = useState(0);
 
 
 
@@ -172,6 +176,12 @@ useGSAP(()=>{
             <>              
 
                         <div className="relative" >
+
+                        <Navbar scroll={setScrollPosition}/>
+
+
+
+
 
                                 <Slider/>
                                                                 <div className=" hidden lg:flex h-[40vh] w-[65vw]  absolute bottom-[-20%] left-[50%] translate-x-[-50%] z-[5]  justify-around">

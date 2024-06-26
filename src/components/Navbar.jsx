@@ -1,7 +1,9 @@
-import React , { useState , useEffect  } from "react";
+import React , { useState , useEffect ,useRef } from "react";
 import { Link } from "react-router-dom";
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import CloseIcon from '@mui/icons-material/Close';
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 function Navbar(props){
     
@@ -35,13 +37,45 @@ function Navbar(props){
 
 
 
+        //gsap
+        const animationRef = useRef();
+
+        useGSAP(()=>{
+
+            const tl = gsap.timeline();
+
+            tl.fromTo(".fadeingsapLogo",{
+                opacity:0,
+                y:40
+            },{
+                opacity:1,
+                y:0,
+                duration:0.5,
+                ease:"power1.inOut",
+            });
+
+            tl.fromTo(".fadeingsapItems",{
+                opacity:0,
+                y:40
+            },{
+                opacity:1,
+                y:0,
+                duration:0.5,
+                ease:"power1.inOut",
+                stagger:-0.1
+            });
+
+
+
+        },{scope:animationRef});
+
 
 
 
     return (
 
-            <div class=" navbar h-20 bg-[#1B7242]  shadow w-[100vw] flex justify-around items-center z-10 fixed top-[40px] lg:top-[80px]">
-                            <div class="h-full w-[28vw] lg:w-[16vw] z-[101]">
+            <div ref={animationRef} class=" navbar h-20 bg-transparent   w-[100vw]  flex justify-around items-center z-10 absolute  ">
+                            <div class="fadeingsapLogo h-full w-[28vw] lg:w-[16vw] z-[101]">
                             <Link to="/" style={{textDecoration:"none",color:"whiite"}} ><img class="object-contain  h-full w-full" src="./RPS RAIPUR.png" alt=""/></Link>
                             </div>
 
@@ -59,12 +93,12 @@ function Navbar(props){
 
 
                             <div class="hidden h-full lg:flex text-white items-center gap-6">
-                            <div  class="cursor-pointer" onClick={handleClick}><Link to="/" style={{textDecoration:"none",color:"whiite"}}>Home</Link></div>
-                            <div  class="cursor-pointer" onClick={handleClick} ><Link to="/about" style={{textDecoration:"none",color:"whiite"}}>About Us</Link></div>
-                            <div  class="cursor-pointer" onClick={handleClick}><Link to="/schoollife" style={{textDecoration:"none",color:"whiite"}}>School Life</Link></div>
-                            <div class="cursor-pointer" onClick={handleClick} ><Link to="/admissions" style={{textDecoration:"none",color:"whiite"}}>Admissions</Link></div>
-                            <Link to="/news" style={{textDecoration:"none",color:"whiite"}}><div  class="cursor-pointer" onClick={handleClick}> News & Updates</div></Link>
-                            <Link to="/gallery" style={{textDecoration:"none",color:"whiite"}}><div  class="cursor-pointer" onClick={handleClick}>Gallery</div></Link>
+                            <div  class="fadeingsapItems cursor-pointer" onClick={handleClick}><Link to="/" style={{textDecoration:"none",color:"whiite"}}>Home</Link></div>
+                            <div  class="fadeingsapItems cursor-pointer" onClick={handleClick} ><Link to="/about" style={{textDecoration:"none",color:"whiite"}}>About Us</Link></div>
+                            <div  class="fadeingsapItems cursor-pointer" onClick={handleClick}><Link to="/schoollife" style={{textDecoration:"none",color:"whiite"}}>School Life</Link></div>
+                            <div class="fadeingsapItems cursor-pointer" onClick={handleClick} ><Link to="/admissions" style={{textDecoration:"none",color:"whiite"}}>Admissions</Link></div>
+                            <Link to="/news" style={{textDecoration:"none",color:"whiite"}}><div  class="fadeingsapItems cursor-pointer" onClick={handleClick}> News & Updates</div></Link>
+                            <Link to="/gallery" style={{textDecoration:"none",color:"whiite"}}><div  class="fadeingsapItems cursor-pointer" onClick={handleClick}>Gallery</div></Link>
                             </div>
 
 

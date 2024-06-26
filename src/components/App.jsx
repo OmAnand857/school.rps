@@ -29,7 +29,7 @@ function App(){
     const [subBar , setSubBar] = useState(true);
 
     var scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
-
+    var height = window.innerHeight;
 
 
     useEffect(() => {
@@ -48,39 +48,29 @@ function App(){
         }
       };
 
-      useEffect(()=>{
-        if(scrollPosition>100){
+     useEffect(()=>{
+        if(scrollPosition>height/2){
            
-            document.querySelector(".subnav").classList.remove("lg:flex");
-            document.querySelector(".subnav").classList.add("lg:hidden");
-            document.querySelector(".infinity").classList.add("hidden");
-
-                    document.querySelector("body").classList?.remove("mt-[160px]");
-                    document.querySelector("body").classList.add("mt-[80px]");
-                    
-                    document.querySelector(".navbar").classList.remove("lg:top-[80px]");
-                    document.querySelector(".navbar").classList.remove("top-[40px]")
-                    document.querySelector(".navbar").classList.add("top-0");
+          document.querySelector(".navbar").classList.add("fixed");
+          document.querySelector(".navbar").classList.remove("absolute")
+          document.querySelector(".navbar").classList.add("bg-[#1B7242]");
+          document.querySelector(".navbar").classList.remove("text-black")
+          document.querySelector(".navbar").classList.remove("bg-transparent");
         }
     else{
-        document.querySelector(".subnav").classList.remove("lg:hidden");
-        document.querySelector(".subnav").classList.add("lg:flex");
-        document.querySelector(".infinity").classList.remove("hidden");
-        
-        document.querySelector("body").classList.remove("mt-[80px]");
-        document.querySelector("body").classList.add("lg:mt-[160px]");
-        document.querySelector("body").classList.add("mt-[120px]");
 
-        document.querySelector(".navbar").classList.remove("lg:top-0"); 
-        document.querySelector(".navbar").classList.add("lg:top-[80px]");
-        document.querySelector(".navbar").classList.add("top-[40px]");
+      document.querySelector(".navbar").classList.remove("fixed");
+      document.querySelector(".navbar").classList.add("absolute")
+      document.querySelector(".navbar").classList.remove("bg-[#1B7242]");
+      document.querySelector(".navbar").classList.add("text-black")
+      document.querySelector(".navbar").classList.add("bg-transparent");
+      
                    
-
-
     }
 
 
   },[scrollPosition])
+  
 
 
 
@@ -139,9 +129,6 @@ if (!countUp.error) {
         <>
             <Routes>
                 <Route path="/" element={<> 
-                    <SubNavBar/>
-                    <InfinitySlider/>
-                    <Navbar scroll={setScrollPosition}/>
             
             <HomeSection/>
             <Acheivements/>
@@ -149,11 +136,11 @@ if (!countUp.error) {
             <Testimonial1/>
             <Contact/>
             <Footer1/></>}></Route>
-            <Route path="/about" element={<><SubNavBar/><InfinitySlider/>  <Navbar scroll={setScrollPosition}/><About/><Footer1/></>}></Route>
-            <Route path="/admissions" element={<> <SubNavBar/><InfinitySlider/><Navbar scroll={setScrollPosition}/><Admissions/><Footer1/></>}></Route>
-            <Route path="/schoollife" element={<> <SubNavBar/><InfinitySlider/><Navbar scroll={setScrollPosition}/><SchoolLife/><Footer1/></>}></Route>
-            <Route path="/news" element={<> <SubNavBar/><InfinitySlider/><Navbar scroll={setScrollPosition}/><NewsUpdates/><Footer1/></>}></Route>
-            <Route path="/gallery" element ={<> <SubNavBar/><InfinitySlider/><Navbar scroll={setScrollPosition}/><Gallery/><Footer1/></>}></Route>
+            <Route path="/about" element={<>   <Navbar scroll={setScrollPosition}/><About/><Footer1/></>}></Route>
+            <Route path="/admissions" element={<> <Navbar scroll={setScrollPosition}/><Admissions/><Footer1/></>}></Route>
+            <Route path="/schoollife" element={<> <Navbar scroll={setScrollPosition}/><SchoolLife/><Footer1/></>}></Route>
+            <Route path="/news" element={<><Navbar scroll={setScrollPosition}/><NewsUpdates/><Footer1/></>}></Route>
+            <Route path="/gallery" element ={<> <Navbar scroll={setScrollPosition}/><Gallery/><Footer1/></>}></Route>
             </Routes>
           
         </>
