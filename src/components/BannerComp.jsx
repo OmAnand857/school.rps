@@ -6,14 +6,7 @@ let back = "url" + "(" + props.image + ")";
         return(
 
                 
-            <div class="relative bg-no-repeat bg-center bg-cover" style={{backgroundImage:back}}>
-            <img class="w-full h-[60vh] md:h-[75vh]" src={props.image} alt=""></img>
-
-
-       
-      
-
-
+            <div class="relative bg-no-repeat bg-center bg-cover w-full h-[60vh] md:h-[80vh]" style={{backgroundImage:back}}>
 
 
         </div>

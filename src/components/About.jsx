@@ -1,19 +1,97 @@
-import {React , useRef ,useEffect} from "react";
+import {React ,useState,  useRef ,useEffect} from "react";
 import TeacherCarousel from "./TeacherCarousel";
-
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 function About(){
 
-
-        
     
+   /*    
+   const AboutAnimation1 = useRef(null);
+    const AboutAnimation2 = useRef(null);
+    const AboutAnimation3 = useRef(null);
+
+    useEffect(()=>{
+        console.log(AboutAnimation1,"first div");
+        console.log(AboutAnimation2,"second div");
+        console.log(AboutAnimation3,"third div");
+    },[]);
+    
+
+   
+    gsap.registerPlugin(useGSAP,ScrollTrigger);
+
+    useGSAP(()=>{
+
+
+        gsap.fromTo(".slideIn",{
+            opacity:0,
+            x:400
+        },{
+            opacity:1,
+            x:0,
+            duration:0.5,
+            ease:"power1.inOut",
+            scrollTrigger:{
+                trigger:".slideIn",
+                markers:true,
+                start:"top 60%",
+                end:"top 40%",
+            }
+        });
+       
+        
+
+
+    },{scope:AboutAnimation1});
+
+    useGSAP(()=>{
+        gsap.fromTo(".slideIn1",{
+            opacity:0,
+            x:-400
+        },{
+            opacity:1,
+            x:0,
+            duration:0.5,
+            ease:"power1.inOut",
+            scrollTrigger:{
+                trigger:".slideIn1",
+                markers:true,
+                start:"top 60%",
+                end:"top 40%",
+            }
+        });
+       
+    },{scope: AboutAnimation2.current})
+
+    useEffect(()=>{
+        gsap.fromTo(".slideIn2",{
+            opacity:0,
+            x:400
+        },{
+            opacity:1,
+            x:0,
+            duration:0.5,
+            ease:"power1.inOut",
+            scrollTrigger:{
+                trigger:".slideIn2",
+                markers:true,
+                start:"top 60%",
+                end:"top 40%",
+                
+            }
+        });
+
+    },[AboutAnimation3.current])
+    */
     
 
 
         return(
 
-                <div >
+                <div  >
                 <div class="h-[60vh] w-full bg-teal-100  relative">
                 <img src="./About.png" alt="" class="w-full h-full"></img>
                 <div class="absolute top-[50%] left-[15%] lg:left-[25%] translate-y-[-50%] w-[80vw]  lg:w-[60vw]">
@@ -29,11 +107,11 @@ function About(){
                     <img class="lg:w-[20vw] w-[35vw] md-[22.5vw] " src="./Frame.png" alt=""></img>
                 </div>
 
-                <div >
+                <div  >
                 
-                    <div class="flex  flex-col  lg:flex-row items-center gap-4 justify-center my-8 w-[90vw] mx-auto">
+                    <div class="  flex  flex-col  lg:flex-row items-center gap-4 justify-center my-8 w-[90vw] mx-auto">
 
-                    <div class="scrollanimate2   w-full lg:w-1/2 flex flex-col order-1 lg:order-0">
+                    <div class="slideIn   w-full lg:w-1/2 flex flex-col order-1 lg:order-0">
                     <h2 class="text-3xl lg:text-left text-center ">Developing Confident and<br/>
                         Successful Learners</h2>
                     <div class="h-[3px] lg:w-[80%] w-full bg-[#1B7242]"></div>
@@ -48,9 +126,9 @@ function About(){
                     </div>
 
 
-                <div class="scrollanimaterev1 flex flex-col lg:flex-row gap-4 items-center  mt-[2vw] w-[90vw] mx-auto">
+                <div class=" flex flex-col lg:flex-row gap-4 items-center  mt-[2vw] w-[90vw] mx-auto">
 
-                    <div class="lg:w-1/2 w-full order-1 flex flex-col  lg:text-right  ">
+                    <div class="slideIn1 lg:w-1/2 w-full order-1 flex flex-col  lg:text-right  ">
                         <h2 class="text-3xl text-center lg:text-right ">Developing Confident and<br />
                             Successful Learners</h2>
                         <div class="h-[3px] w-full lg:w-[80%] mr-0 ml-auto bg-[#1B7242]"></div>
@@ -58,15 +136,15 @@ function About(){
                         <button class=" bg-[#1B7242] h-[40px] w-[120px] text-white mx-auto  rounded">View More</button>
                     </div>
 
-                    <div class=" scrollanimaterev1 w-[100%] lg:w-1/2 flex justify-center lg:justify-start">
+                    <div class="  w-[100%] lg:w-1/2 flex justify-center lg:justify-start">
                         <img class="object-contain" src="./blob2.png" alt=""></img>
                     </div>
 
                 </div>
 
-                                <div class="flex flex-col  lg:flex-row items-center gap-4 justify-center my-8 w-[90vw] mx-auto">
+                                <div   class="  flex flex-col  lg:flex-row items-center gap-4 justify-center my-8 w-[90vw] mx-auto">
 
-                <div  class="scrollanimate1  w-full lg:w-1/2 flex flex-col order-1 lg:order-0">
+                <div  class="slideIn2 w-full lg:w-1/2 flex flex-col order-1 lg:order-0">
                 <h2 class="text-3xl lg:text-left text-center ">Developing Confident and<br/>
                     Successful Learners</h2>
                 <div class="h-[3px] lg:w-[80%] w-full bg-[#1B7242]"></div>
@@ -74,7 +152,7 @@ function About(){
                 <button class="mx-auto bg-[#1B7242] h-[40px] w-[120px] mt-[1vw] text-white rounded">View More</button>
                 </div>
 
-                <div class="w-full justify-center lg:order-1  lg:w-1/2 flex lg:justify-end">
+                <div class=" w-full justify-center lg:order-1  lg:w-1/2 flex lg:justify-end">
                     <img  class="object-contain" src="./blob.png" alt=""></img>
                 </div>
 

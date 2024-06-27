@@ -241,3 +241,9 @@ animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 .navbar{
     transition: all .2s cubic-bezier(.165,.84,.44,1);
 }
+.counter{
+    background-image: url("https://www.pblworks.org/sites/default/files/styles/twitter/public/2020-01/blog%20PBL%20as%20an%20Equity%20Imperative.png?itok=IoVACls5");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}

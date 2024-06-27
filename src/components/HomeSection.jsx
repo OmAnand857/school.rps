@@ -8,19 +8,20 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from "./Navbar";
-
+import { Typewriter } from 'react-simple-typewriter'
 
 
 function HomeSection(){
 
     const [scrollPosition, setScrollPosition] = useState(0);
 
-
+    const words = ["Learning", "Growing", "Exploring", "Achieving", "Dreaming"];
 
 //gsap animation logic
 gsap.registerPlugin(useGSAP,ScrollTrigger);
 const animationContainer1 = useRef();
 const animationContainer2 = useRef();
+const textContainer = useRef();
 
 
 useGSAP(()=>{
@@ -150,6 +151,21 @@ useGSAP(()=>{
 
 },{scope:animationContainer2});
 
+useGSAP(()=>{
+    gsap.fromTo(".textanimate1",{
+        y:20,
+        opacity:0,
+    },
+    {
+        y:0,
+        opacity:1,
+        duration:0.75,
+       stagger:0.2,
+       delay:1.5
+    })
+
+},{scope:textContainer});
+
 
 
 
@@ -184,9 +200,9 @@ useGSAP(()=>{
 
 
                                 <Slider/>
-                                                                <div className=" hidden lg:flex h-[40vh] w-[65vw]  absolute bottom-[-20%] left-[50%] translate-x-[-50%] z-[5]  justify-around">
+                                                                <div className=" hidden lg:flex h-[40vh] w-[65vw]  absolute bottom-[-30%]  left-[50%] translate-x-[-50%] z-[5]  justify-around">
 
-                                <div className="  flex flex-col items-center gap-4 w-[30%] h-full shadow-xl">
+                                <div className="  flex flex-col items-center gap-4  w-[30%] h-full shadow-xl">
                                     <img className="w-full h-[70%]" src="./Rectangle 5.png" alt=""></img>
                                 <Link to="admissions"> <div className="flex flex-col items-center cursor-pointer">
                                         <h3 className="text-xl">Admissions</h3>
@@ -234,10 +250,23 @@ useGSAP(()=>{
 
 
 
-                            <div  className=" w-[80vw] lg:w-[40vw] z-[5] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] lg:top-[40%] lg:left-[39%] ">
-            <p className=" text-[5vw] md:text-[4vw] lg:text-[2vw] font-[Roboto] text-white">Welcome to</p>
-            <h1 className="text-[10vw] text-white font-bold mb-[1vw] md:text-[8vw] lg:text-[4vw] font-[Outfit] leading-[100%]">Royal Public <br/> School <span className="text-[8vw] text-[#FE9132]">,</span> Raipur</h1>
-            <div className='flex  text-white gap-[3vw] mt-[2vw]'><button className="bg-[#1B7242] p-[1vw] rounded">Get Started</button> <button className="bg-transparent border-white border-2 p-[1vw] rounded">Watch Video</button></div>
+                            <div ref={textContainer}  className=" w-[80vw]  z-[5] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]  ">
+            <p className="textanimate1 text-[5vw] md:text-[4vw] lg:text-[2vw] font-[Open Sans] text-white">Welcome to</p>
+            <h1 className=" textanimate1 text-[10vw] text-white font-bold mb-[1vw] md:text-[8vw] lg:text-[4vw] font-[Outfit] leading-[100%]">Royal Public  School <span className="text-[8vw] text-[#FE9132]">,</span> Raipur</h1>
+            <p className="textanimate1 text-[5vw] md:text-[4vw] lg:text-[2vw] font-[Open Sans] text-white">where every child's journey is filled with { " "} 
+            <span className="text-[#FE9132] text-[3xl] lg:text-5xl">
+            <Typewriter
+            words={words}
+            loop={0}
+            cursor
+            cursorStyle='|'
+            typeSpeed={200}
+            deleteSpeed={70}
+            delaySpeed={1000}
+          />
+            </span>
+            </p>
+            <div className='flex  text-white gap-[10px] mt-[2vw]'><button className="bg-[#1B7242] h-[40px] w-[120px] rounded">Get Started</button> <button className="bg-transparent border-white border-2 h-[40px] w-[120px] rounded">Watch Video</button></div>
             
         </div>
 
@@ -272,7 +301,7 @@ useGSAP(()=>{
 
 
 
-                    <div ref={animationContainer1} className=" mt-[40px] lg:mt-[10vw] w-[100vw] relative" >
+                    <div ref={animationContainer1} className=" mt-[40px] lg:mt-[250px] w-[100vw] relative" >
                     <img className="  hidden lg:block absolute top-[8%] h-[10vw] w-[18vw] left-[20%] object-contain" src="./Group 14.png" alt=""></img>
                             <div className=" flex flex-col items-center">
                                 
