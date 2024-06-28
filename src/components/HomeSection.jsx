@@ -1,4 +1,4 @@
-import { useRef ,useState } from "react";
+import { useEffect, useRef ,useState } from "react";
 import CardComp from "./CardComp";
 import Slider from "./Slider";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
@@ -9,11 +9,22 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from "./Navbar";
 import { Typewriter } from 'react-simple-typewriter'
-
+import BannerCard from "./BannerCard";
+import Form from "./Form";
 
 function HomeSection(){
 
     const [scrollPosition, setScrollPosition] = useState(0);
+    const [width , setWidth] = useState();
+
+    window.addEventListener("load",function (){
+        setWidth(window.innerWidth);
+        return width;
+    })
+    window.addEventListener("resize",function (){
+        setWidth(window.innerWidth);
+        return width;
+    })
 
     const words = ["Learning", "Growing", "Exploring", "Achieving", "Dreaming"];
 
@@ -191,65 +202,17 @@ useGSAP(()=>{
         return (    
             <>              
 
-                        <div className="relative" >
+                        <div className="relative " >
 
                         <Navbar scroll={setScrollPosition}/>
 
 
 
-
+                                {width>1024?<Form/>:null}
 
                                 <Slider/>
-                                                                <div className=" hidden lg:flex h-[40vh] w-[65vw]  absolute bottom-[-30%]  left-[50%] translate-x-[-50%] z-[5]  justify-around">
-
-                                <div className="  flex flex-col items-center gap-4  w-[30%] h-full shadow-xl">
-                                    <img className="w-full h-[70%]" src="./Rectangle 5.png" alt=""></img>
-                                <Link to="admissions"> <div className="flex flex-col items-center cursor-pointer">
-                                        <h3 className="text-xl">Admissions</h3>
-                                        <ArrowForwardIcon className="text-[#FE9132] text-[1rem]"/>
-
-                                    </div></Link> 
-
-                                </div>
-
-                                <div className=" flex flex-col items-center gap-4 w-[30%] h-full shadow-xl">
-                                    <img className="w-full h-[70%]" src="./image 4.png" alt=""></img>
-                                <Link to="about">    <div className="flex flex-col items-center cursor-pointer">
-                                        <h3 className="text-xl">About Us</h3>
-                                        <ArrowForwardIcon className="text-[#FE9132] text-[1rem]"/>
-
-                                    </div></Link>
-
-
-                                                    </div>
-
-
-                            <div className=" flex flex-col items-center gap-4 w-[30%] h-full shadow-xl">
-                                <img className="w-full h-[70%]" src="./image 3.png" alt=""></img>
-                            <Link to="/SchoolLife">  <div className="flex flex-col items-center cursor-pointer">
-                                    <h3 className="text-xl">Facilities</h3>
-                                    <ArrowForwardIcon className="text-[#FE9132] text-[1rem]"/>
-
-                                </div></Link>
-
-                            </div>
-
-
-                            </div>
-
-
-                               
-
-
-
-
-
-
-
-
-
-
-
+                                                                                     
+            
                             <div ref={textContainer}  className=" w-[80vw]  z-[5] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]  ">
             <p className="textanimate1 text-[5vw] md:text-[4vw] lg:text-[2vw] font-[Open Sans] text-white">Welcome to</p>
             <h1 className=" textanimate1 text-[10vw] text-white font-bold mb-[1vw] md:text-[8vw] lg:text-[4vw] font-[Outfit] leading-[100%]">Royal Public  School <span className="text-[8vw] text-[#FE9132]">,</span> Raipur</h1>
@@ -276,6 +239,8 @@ useGSAP(()=>{
 
 
                         </div>
+                    
+                    {width<1024?<Form/>:null}
 
 
 
@@ -301,7 +266,7 @@ useGSAP(()=>{
 
 
 
-                    <div ref={animationContainer1} className=" mt-[40px] lg:mt-[250px] w-[100vw] relative" >
+                    <div ref={animationContainer1} className=" mt-[40px]  w-[100vw] relative" >
                     <img className="  hidden lg:block absolute top-[8%] h-[10vw] w-[18vw] left-[20%] object-contain" src="./Group 14.png" alt=""></img>
                             <div className=" flex flex-col items-center">
                                 
