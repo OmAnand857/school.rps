@@ -16,7 +16,7 @@ function Form(){
             y:0,
             opacity:1,
             duration:0.5,
-            delay:0.5
+            ease:"power1.out"
         })
     },{scope:popUpRef});
 

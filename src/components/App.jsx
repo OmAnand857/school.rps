@@ -20,7 +20,7 @@ import {CountUp} from "countup.js";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import Testimonial1 from "./Testimonial1";
-
+import ThreeDSlide from "./3DSlide";
 
 function App(){
 

@@ -172,6 +172,7 @@ useGSAP(()=>{
         opacity:1,
         duration:0.75,
        stagger:0.2,
+       ease:"power1.out",
        delay:1.5
     })
 
@@ -285,7 +286,7 @@ useGSAP(()=>{
 
                 
                     <div ref={animationContainer2} className="flex flex-col items-center my-16 w-[100vw]  relative">
-                    <img   className=" hidden lg:block object-contain absolute top-[3.5vw] left-[65vw] h-[10vw] w-[10vw] "src="./Group 9.png" alt=""></img>
+                    <img   className="textanimate hidden lg:block object-contain absolute top-[3.5vw] left-[65vw] h-[10vw] w-[10vw] "src="./Group 9.png" alt=""></img>
                             <h1  className="textanimate text-[#1B7242] text-center lg:my-[2vw] my-[4vw] text-3xl md:text-6xl leading-[150%] tracking-wide font-[Outfit] font-semibold">DIRECTORS MESSAGE</h1>
                             <div className="flex lg:flex-row flex-col  gap-[4vw] lg:gap-4 items-center w-4/5">
                                 <div className="scrollanimate  lg:w-2/4 w-100vw " >
