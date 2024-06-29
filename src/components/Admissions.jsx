@@ -7,11 +7,11 @@ function Admissions(){
 
             <div>
             <div class="h-[60vh] w-full relative">
-            <img class="absolute h-[5vw] w-[5vw] top-[20vw] right-[10vw] animate-bounce" src="./Ellipse 28.png" alt=""></img>
+            <img class="absolute h-[5vw] w-[5vw] top-[20vw] right-[10vw] lg:animate-bounce" src="./Ellipse 28.png" alt=""></img>
             <img  class="absolute h-[5vw] w-[5vw] top-[7vw] right-[17vw] animation-triangle-float " src="./Polygon 1.png" alt=""></img>
             <img  class="absolute h-[5vw] w-[5vw] top-[10vw] right-[40vw] animation-rectangle-float" src="./Rectangle 23.png" alt=""></img>
 
-            <img class="w-full h-full " src="./Frame2.png" alt=""></img>
+            <img loading="lazy" class="w-full h-full " src="./Frame2.png" alt=""></img>
             <div class="h-[10vw] w-[80vw] lg:w-[30vw] absolute top-[50%] left-[20%] translate-y-[-50%]">
             <h1 class="text-[10vw] mb-[1vw] md:text-[8vw] lg:text-[4vw] font-[Outfit] leading-[100%]">Unlock Your<br/> 
                            <span class="text-[#FE9132]">Future</span> </h1>

@@ -5,7 +5,7 @@
 
         return(
 
-                <div className="w-[80vw] my-10 py-8 mx-auto">
+                <div className="w-[90vw] my-10 py-8 mx-auto">
 
                         <h1 className="scroll-zoomin text-3xl md:text-5xl mb-8 text-[#1B7242] text-center font-[Outfit] font-semibold uppercase">Exploring Boundless Creativity</h1>
 

@@ -127,21 +127,29 @@ if (!countUp.error) {
 
     return (
         <>
+        
+         <Navbar scroll={setScrollPosition}/>
+
+
             <Routes>
-                <Route path="/" element={<> 
-            
+                <Route path="/" element={<>  
             <HomeSection/>
             <Acheivements/>
             <HallOfFame/>
             <Testimonial1/>
             <Contact/>
-            <Footer1/></>}></Route>
-            <Route path="/about" element={<>   <Navbar scroll={setScrollPosition}/><About/><Footer1/></>}></Route>
-            <Route path="/admissions" element={<> <Navbar scroll={setScrollPosition}/><Admissions/><Footer1/></>}></Route>
-            <Route path="/schoollife" element={<> <Navbar scroll={setScrollPosition}/><SchoolLife/><Footer1/></>}></Route>
-            <Route path="/news" element={<><Navbar scroll={setScrollPosition}/><NewsUpdates/><Footer1/></>}></Route>
-            <Route path="/gallery" element ={<> <Navbar scroll={setScrollPosition}/><Gallery/><Footer1/></>}></Route>
+            </>}>
+            </Route>
+
+            <Route path="/about" element={<><About/></>}></Route>
+            <Route path="/admissions" element={<><Admissions/></>}></Route>
+            <Route path="/schoollife" element={<><SchoolLife/></>}></Route>
+            <Route path="/news" element={<><NewsUpdates/></>}></Route>
+            <Route path="/gallery" element ={<><Gallery/></>}></Route>
+
             </Routes>
+
+            <Footer1/>
           
         </>
     )

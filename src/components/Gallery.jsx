@@ -9,7 +9,7 @@ function Gallery(){
 
 
                             <div class="w-full h-[60vh] relative">
-                                <img class="h-full w-full" src="./GroupGallery.png" alt=""></img>
+                                <img loading="lazy" class="h-full w-full" src="./GroupGallery.png" alt=""></img>
                                 <div class="absolute top-[50%] left-[15%] translate-y-[-50%] ">
                                     <h1 class="text-white text-[10vw] md:text-[8vw] lg:text-[4vw] font-[Outfit] uppercase">Explore Our Visual<br/>Tapestry : <span class="text-[#FE9132]">Gallery</span></h1>
                                 </div>

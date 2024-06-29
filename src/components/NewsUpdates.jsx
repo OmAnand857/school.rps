@@ -10,7 +10,7 @@ function NewsUpdates(){
 
 
                             <div class="w-full h-[60vh] relative">
-                                <img class="h-full w-full" src="./Frame2.png" alt=""></img>
+                                <img loading="lazy" class="h-full w-full" src="./Frame2.png" alt=""></img>
                                 <div class="absolute top-[50%] left-[15%] translate-y-[-50%] ">
                                     <h1 class="text-[#1B7242] text-[10vw] md:text-[8vw] lg:text-[4vw] font-[Outfit] uppercase">News</h1>
                                     <p class=" text-[5vw] text-white md:text-[4vw] lg:text-[2vw] font-[Roboto]">Tune In for Exciting and<br/> Important <span class="text-[#FE9132]">NEWS</span></p>
